@@ -1,0 +1,176 @@
+<script>
+export default {
+    name: 'Hero',
+    data() {
+        return {
+            showSearchInput: false,
+            logo: './src/components/about-page-components/logo/mimosa_logo.svg',
+            navLinks: [
+                { navItem: 'Home', url: '/about' },
+                { navItem: 'Appartamenti', url: '' },
+                { navItem: 'Ristorante', url: '' },
+                { navItem: 'Servizi', url: '' }
+            ]
+        };
+    },
+    methods: {
+        toggleSearch() {
+            this.showSearchInput = !this.showSearchInput;
+            console.log('ciao')
+        }
+    }
+};
+</script>
+
+<template>
+    <section class="bg-image">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-content py-5">
+                        <div class="text-content">
+                            <h2 class="title-l">Lorem Ipsum</h2>
+                            <p class="font-custom mb-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                <br>Lorem Ipsum is simply dummy!
+                            </p>
+                            <button class="btn-border-to-white">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+  
+<style lang="scss" scoped>
+@use 'src/assets/partials/mixin' as*;
+@use 'src/assets/partials/variables' as*;
+
+.logo{
+    width: 40%;
+    height: auto;
+}
+
+.bg-image {
+    background-image: url('hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+
+    .title-l {
+        @include title-m;
+        line-height: 1.5em;
+    }
+
+    .custom-sub-title-s {
+        @include sub-title-s;
+    }
+
+    .btn-border-to-white {
+        @include btn-border-to-white;
+    }
+
+    .font-custom {
+        font-size: $custom-sub-title-m;
+        font-weight: 400;
+        color: white;
+        line-height: 1.4em;
+    }
+
+    .custom-nav-link {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14.4px;
+        padding: 27px 23px 22px;
+        font-weight: 600;
+    }
+
+    .nav {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .search-input {
+        margin-left: 1rem;
+        padding: 0.3rem;
+        font-size: 14px;
+        border-radius: 0.2rem;
+        border: 0px;
+    }
+
+    button {
+        border: none;
+        background-color: #ffffff00;
+    }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .bg-image {
+        .container {
+            padding: 1rem;
+        }
+
+        .custom-nav-link {
+            font-size: 12px;
+            padding: 15px 10px;
+        }
+
+        .nav {
+            justify-content: center;
+        }
+
+        .search-input {
+            width: 100%;
+            margin-top: 0.5rem;
+            font-size: 12px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-image {
+        .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .custom-nav-link {
+            padding: 10px 5px;
+            font-size: 10px;
+        }
+
+        .search-input {
+            width: 100%;
+            font-size: 10px;
+        }
+
+        .title-l {
+            font-size: 1.5rem;
+        }
+
+        .font-custom {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .btn-border-to-white {
+            font-size: 0.8rem;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+    }
+}
+</style>
+
+  
