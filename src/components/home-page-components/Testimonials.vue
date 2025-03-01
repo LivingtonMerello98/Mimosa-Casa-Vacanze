@@ -76,7 +76,7 @@ export default {
 @use 'src/assets/partials/variables' as*;
 
 .bg-image {
-    background-image: url('pharm-overlay.png');
+    background-image: url('/images/pharm-overlay.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -19,7 +19,7 @@ export default {
     <div class="splashPage">
         <div class="container d-flex justify-content-center align-items-center content">
             <!-- Razzo -->
-            <img src="/public/mimosa_logo.svg" class="rocket" alt="Rocket">
+            <img src="/images/mimosa_logo.svg" class="rocket" alt="Rocket">
             <!-- Frase casuale sotto il razzo -->
             <!-- <span class="text-white random-phrase">{{ randomPhrase }}</span> -->
             <!-- Spinner -->

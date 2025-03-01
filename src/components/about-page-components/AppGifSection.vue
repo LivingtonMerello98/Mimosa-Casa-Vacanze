@@ -34,7 +34,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('appartament.png');
+    background-image: url('/images/appartament.png');
     background-repeat: no-repeat;
     background-size: cover;
 

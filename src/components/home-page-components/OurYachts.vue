@@ -7,42 +7,42 @@ export default {
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'express',
-                    url: 'house.png'
+                    url: '/images/house.png'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'cruiser',
-                    url: 'house.png'
+                    url: '/images/house.png'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'cruiser',
-                    url: 'house.png'
+                    url: '/images/house.png'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'flybridges',
-                     url: 'house.png'
+                     url: '/images/house.png'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'sedan bridges',
-                     url: 'house.png'
+                     url: '/images/house.png'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'tri-deck',
-                     url: 'house.png'
+                     url: '/images/house.png'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'megayacths',
-                     url: 'house.png'
+                     url: '/images/house.png'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'convertibles',
-                     url: 'house.png'
+                     url: '/images/house.png'
                 }
             ]
         }

@@ -38,17 +38,17 @@ export default {
         }
     },
     mounted() {
-        window.addEventListener('scroll', this.parallaxEffect);
+        //  window.addEventListener('scroll', this.parallaxEffect);
     },
     beforeDestroy() {
-        window.removeEventListener('scroll', this.parallaxEffect);
+        //window.removeEventListener('scroll', this.parallaxEffect);
     },
     methods: {
-        parallaxEffect() {
-            let scrollPosition = window.pageYOffset;
-            let parallax = document.querySelector('.parallax');
-            parallax.style.backgroundPositionY = scrollPosition * 0.1 + 'px'; // Regola la velocità del parallasse
-        }
+        // parallaxEffect() {
+        //     let scrollPosition = window.pageYOffset;
+        //     let parallax = document.querySelector('.parallax');
+        //     parallax.style.backgroundPositionY = scrollPosition * 0.1 + 'px'; // Regola la velocità del parallasse
+        // }
     }
 }
 </script>

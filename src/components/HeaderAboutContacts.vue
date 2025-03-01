@@ -3,7 +3,7 @@ export default {
     name: 'HeaderAboutContacts',
     data() {
         return {
-            logo: './src/components/about-page-components/logo/mimosa_logo.svg',
+            logo: '/images/mimosa_logo.svg',
             navLinks: [
                 {
                     navItem: 'appartamenti',
@@ -27,17 +27,15 @@ export default {
 }
 </script>
 
-
-
 <template>
     <section class="bg-header">
         <div class="container py-1">
             <header>
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 ">
                     <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                        <img :src="logo" alt="logo" class="logo">
+                        <img src="/images/mimosa_logo.svg"
+                            alt="" class="logo mb-4">
                     </a>
-
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                         <li v-for="(link, index) in navLinks" :key="index">
                             <!--<router-link></router-link> per la navigazione tra i link-->

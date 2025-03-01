@@ -9,7 +9,8 @@ export default {
   },
   data() {
     return {
-      flag: true,
+      //riattivare alla fine
+      flag: false,
       footerLinks: [
         { label: 'APPARTAMENTI', url: '#' },
         { label: 'RISTORANTI', url: '#' },

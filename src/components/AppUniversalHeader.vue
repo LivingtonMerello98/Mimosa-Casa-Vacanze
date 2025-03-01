@@ -1,7 +1,5 @@
 <script>
 
-//HEADER DI TUTTI
-
 export default {
   name: "UniversalHeader",
   data() {
@@ -15,7 +13,6 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-12 py-2 d-flex flex-column flex-md-row align-items-center">
-          <!-- INDIRIZZO E NUMERO DI TELEFONO HEADER -->
           <div class="address mb-2 mb-md-0">
             <span>
               <i class="fa-solid fa-location-dot map-location-icon"></i>

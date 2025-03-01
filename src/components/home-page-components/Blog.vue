@@ -5,17 +5,17 @@ export default {
         return {
             posts: [
                 {
-                    image: 'pharm-overlay.png',
+                    image: '/images/pharm-overlay.png',
                     data: 'December 16, 2020',
                     title: 'Lorem Ipsum is simply dummy text of the printing'
                 },
                 {
-                    image: 'pharm-overlay.png',
+                    image: '/images/pharm-overlay.png',
                     data: 'December 16, 2020',
                     title: 'Lorem Ipsum is simply dummy text of the printing'
                 },
                 {
-                    image: 'pharm-overlay.png',
+                    image: '/images/pharm-overlay.png',
                     data: 'December 16, 2020',
                     title: 'Lorem Ipsum is simply dummy text of the printing'
                 }

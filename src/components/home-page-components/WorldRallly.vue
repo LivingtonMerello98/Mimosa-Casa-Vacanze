@@ -27,7 +27,7 @@ export default {
 @use 'src/assets/partials/variables' as*;
 
 .bg-image {
-    background-image: url('nature.png');
+    background-image: url('/images/nature.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;

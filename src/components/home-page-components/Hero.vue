@@ -4,7 +4,6 @@ export default {
     data() {
         return {
             showSearchInput: false,
-            logo: './src/components/about-page-components/logo/mimosa_logo.svg',
             navLinks: [
                 { navItem: 'Home', url: '/about' },
                 { navItem: 'Appartamenti', url: '' },
@@ -18,6 +17,9 @@ export default {
             this.showSearchInput = !this.showSearchInput;
             console.log('ciao')
         }
+    },
+    mounted(){
+        console.log('il caricamento è stato preso')
     }
 };
 </script>
@@ -53,7 +55,7 @@ export default {
 }
 
 .bg-image {
-    background-image: url('hero.png');
+    background-image: url('/images/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 85vh;
