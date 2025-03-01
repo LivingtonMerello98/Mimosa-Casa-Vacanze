@@ -8,25 +8,26 @@ export default {
     <section>
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-6 col-12  d-none d-md-block d-flex justify-content-center align-items-center py-5">
+
+                <div class="col-md-6 col-12 img-container">
                     <img src="https://incrociata.it/wp-content/uploads/2019/10/incrociata-840x560.jpg" class="img-fluid img-agriturismo" alt="Agriturismo">
                 </div>
 
                 <div class="col-md-12 col-sm-12 col-lg-6 py-5">
-                    <div class="text col-12 text-center text-lg-start"> <!-- Classi aggiunte per centrare solo su mobile/tablet -->
-                        <h1 class="title-section mb-2">La Nostra storia</h1>
+                    <div class="text col-12 text-lg-start"> <!-- Classi aggiunte per centrare solo su mobile/tablet -->
+                        <h1 class="title-section mb-2">Vivi la nostra storia</h1>
                         <!-- hr provvisorio -->
                         <div class="col-12 d-flex my-5" style="background-color: #ffff;">
-                            <div class="col-2" style="height: 1px; background-color:#F1E2C5 ;"></div>
+                            <div class="col-2" style="height: 1px; background-color:#191B1C ;"></div>
                         </div>
                         <p class="paragraph-bold mb-5">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Mimosa Casa Vacanze nasce dal sogno di creare un angolo di paradiso immerso nella splendida campagna toscana.
                         </p>
                         <p class="paragraph-thin mb-5">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            La nostra passione per la natura, la tradizione e l’ospitalità ci ha spinto a trasformare un’antica casa di campagna in un accogliente rifugio dove ogni ospite può sentirsi come a casa.
                         </p>
                         <p class="paragraph-thin mb-5">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Situato tra colline verdi, vigneti e oliveti, il nostro agriturismo è il luogo ideale per chi cerca una pausa dalla frenesia della vita quotidiana, senza rinunciare ai comfort moderni.
                         </p>
                         <button class="btn-secondary">Read more</button>
                     </div>
@@ -40,8 +41,14 @@ export default {
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
 
+.img-container {
+    display: flex;
+   // justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
 .img-agriturismo{
-    width: 80%;
+    width: 85%;
 }
 
 section{
@@ -65,12 +72,21 @@ background-color: white;
     }
 
 /* Media query per tablet e mobile */
+
+@media (max-width: 768px) {
+    .img-container{
+        display: none;
+    }
+}
 @media (max-width: 991px) {
     .text-center {
         text-align: center;
     }
     p{
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .img-container{
+        display: none;
     }
 }
 </style>

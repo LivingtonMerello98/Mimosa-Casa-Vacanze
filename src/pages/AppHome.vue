@@ -1,4 +1,5 @@
 <script>
+import { store } from '../store';
 import OurHistory from '../components/home-page-components/OurHistory.vue';
 import BettersService from '../components/home-page-components/BettersService.vue';
 import Services from '../components/home-page-components/Services.vue';
@@ -9,6 +10,7 @@ import Hero from '../components/home-page-components/Hero.vue';
 import Blog from '../components/home-page-components/Blog.vue';
 import AppUniversalHeader from '../components/AppUniversalHeader.vue';
 import HeaderAboutContacts from '../components/HeaderAboutContacts.vue';
+import AppSidebar from '../components/AppSidebar.vue';
 
 
 export default {
@@ -24,13 +26,27 @@ export default {
         Hero,
         Blog,
         HeaderAboutContacts,
-        AppUniversalHeader
+        AppUniversalHeader,
+        AppSidebar
 
+    },
+
+    computed: {
+        showMenu() {
+            // Accedi alla proprietà `showMenu` dal tuo store
+            return store.showMenu;
+        }
+    },
+    mounted(){
+        console.log(store.showMenu)
     }
 }
 </script>
 
 <template>
+    <div v-if="showMenu"> 
+        <AppSidebar/> 
+    </div>
     <AppUniversalHeader />
     <HeaderAboutContacts />
     <Hero />

@@ -1,21 +1,16 @@
-import { router } from './router'
-import { createApp } from 'vue'
-import './style.scss'
-import App from './App.vue'
+import { createApp } from 'vue';
+import { router } from './router';
+import './style.scss';
+import App from './App.vue';
 
-import "@fortawesome/fontawesome-free/js/all.js";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+import { faAnchor, faCar, faBriefcase, faLocationDot, faPhone, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faStar, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-// import "@fontsource/poppins"; // Defaults to weight 400
-// import "@fontsource/poppins/100.css"; // Specify weight
-// import "@fontsource/poppins/200.css"; // Specify weight
-// import "@fontsource/poppins/300.css"; // Specify weight
-// import "@fontsource/poppins/400.css"; // Specify weight
-// import "@fontsource/poppins/400-italic.css"; // Specify weight and style
-// import "@fontsource/poppins/500.css"; // Import weight 500
-// import "@fontsource/poppins/600.css"; // Import weight 600
-// import "@fontsource/poppins/700.css"; // Import weight 700
-// import "@fontsource/poppins/800.css"; // Import weight 800
+library.add(faUser, faAnchor, faCar, faBriefcase, faStar, faThumbsUp, faLocationDot, faPhone, faFacebook, faTwitter, faInstagram, faBars, faClose);
 
 import "@fontsource/archivo"; // Default weight (400)
 import "@fontsource/archivo/100.css"; // Weight 100
@@ -29,4 +24,21 @@ import "@fontsource/archivo/700.css"; // Weight 700
 import "@fontsource/archivo/800.css"; // Weight 800
 import "@fontsource/archivo/900.css"; // Weight 900
 
-createApp(App).use(router).mount('#app')
+
+const app = createApp(App);
+app.component('font-awesome-icon', FontAwesomeIcon);
+app.use(router);
+app.mount('#app');
+
+
+
+// import "@fontsource/poppins"; // Defaults to weight 400
+// import "@fontsource/poppins/100.css"; // Specify weight
+// import "@fontsource/poppins/200.css"; // Specify weight
+// import "@fontsource/poppins/300.css"; // Specify weight
+// import "@fontsource/poppins/400.css"; // Specify weight
+// import "@fontsource/poppins/400-italic.css"; // Specify weight and style
+// import "@fontsource/poppins/500.css"; // Import weight 500
+// import "@fontsource/poppins/600.css"; // Import weight 600
+// import "@fontsource/poppins/700.css"; // Import weight 700
+// import "@fontsource/poppins/800.css"; // Import weight 800

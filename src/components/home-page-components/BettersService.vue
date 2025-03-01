@@ -11,7 +11,7 @@ export default {
                 <div class="col-12 py-5">
                     <div class="content mb-5">
                         <div class="text text-center py-5">
-                            <h2 class="title-m mb-5">Lorem Ipsum is simply dummy text<br>of the printing and typesetting</h2>
+                            <h2 class="title-m mb-5">Camere accoglienti per <br>un soggiorno indimenticabile</h2>
                             <button class="btn-primary-to-white mb-5">More Details</button>
                         </div>
                     </div>
@@ -38,11 +38,11 @@ export default {
 
         /* Impostazioni per dispositivi più piccoli */
         @media (max-width: 991px) {
-            font-size: 1.5rem; /* Riduce la dimensione del font su tablet e smartphone */
+            font-size: 1.9rem; /* Riduce la dimensione del font su tablet e smartphone */
         }
 
         @media (max-width: 576px) {
-            font-size: 1.25rem; /* Riduce ulteriormente la dimensione sui dispositivi mobili */
+            font-size: 1.9rem; /* Riduce ulteriormente la dimensione sui dispositivi mobili */
         }
     }
 

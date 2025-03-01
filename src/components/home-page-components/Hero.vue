@@ -31,12 +31,13 @@ export default {
                 <div class="col-12">
                     <div class="card-content py-5">
                         <div class="text-content">
-                            <h2 class="title-l">Lorem Ipsum</h2>
+                            <h2 class="title-l"> Soggiorni rilassanti 
+                                <br>in campagna</h2>
                             <p class="font-custom mb-5">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                <br>Lorem Ipsum is simply dummy!
+                                Soggiorna in un'oasi di tranquillità circondata dalla natura,
+                                <br>con piscina e servizi esclusivi.
                             </p>
-                            <button class="btn-border-to-white">Learn More</button>
+                            <button class="btn-border-to-white">Esplora le nostre offerte</button>
                         </div>
                     </div>
                 </div>
@@ -132,7 +133,7 @@ export default {
         }
 
         button {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
@@ -155,12 +156,7 @@ export default {
         }
 
         .title-l {
-            font-size: 1.5rem;
-        }
-
-        .font-custom {
-            font-size: 0.9rem;
-            text-align: center;
+            font-size: 2rem;
         }
 
         .btn-border-to-white {

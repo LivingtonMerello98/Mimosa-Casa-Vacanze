@@ -1,4 +1,5 @@
 <script>
+import { store } from '../store';
 export default {
     name: 'HeaderAboutContacts',
     data() {
@@ -23,20 +24,25 @@ export default {
                 }
             ]
         }
+    },
+    methods:{
+    toggleMenu(){
+        store.toggleMenu()
     }
+  }
 }
 </script>
 
 <template>
-    <section class="bg-header">
+    <section>
         <div class="container py-1">
-            <header>
+            <header class="d-flex">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 ">
-                    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <a href="/" class="d-flex align-items-center col-md-3 mb-md-0 text-dark text-decoration-none">
                         <img src="/images/mimosa_logo.svg"
                             alt="" class="logo mb-4">
                     </a>
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 navigation">
                         <li v-for="(link, index) in navLinks" :key="index">
                             <!--<router-link></router-link> per la navigazione tra i link-->
                             <router-link v-if="link.url" :to="link.url" class="nav-link mx-1 custom-nav-link">{{
@@ -44,21 +50,13 @@ export default {
                             <a v-else href="#" class="nav-link px-2 mx-1 custom-nav-link">{{ link.navItem }}</a>
                         </li>
                     </ul>
+                </div>
 
-                    <div class="col-md-3 text-end">
-                        <!-- <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> -->
-                    </div>
+                <div class="hamburger-container">
+                        <font-awesome-icon @click="toggleMenu()" :icon="['fas', 'bars']" style="color: white;" class="px-3" />
                 </div>
             </header>
         </div>
-        <!-- <div class="col-12 py-3 bg-white">
-            <div class="container">
-                <div class="d-flex">
-                    <div class="text-uppercase nav pr border-right">home</div>
-                    <div class="text-uppercase nav pl custom-active">lorem</div>
-                </div>
-            </div>
-        </div> -->
     </section>
 </template>
 
@@ -73,7 +71,7 @@ export default {
     height: auto;
 }
 
-.bg-header {
+section {
     background-color: $custom-secondary-color ;
 }
 
@@ -85,7 +83,6 @@ export default {
     font-weight: 600;
 
     &:hover {
-        //color: $custom-color-title-section;
         color:#F1E2C5;
     }
 }
@@ -110,5 +107,25 @@ export default {
 
 .custom-active {
     color: $custom-primary-color;
+}
+
+.hamburger-container{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+   .hamburger-container{
+     display: block;
+     display:flex;
+     align-items: center;
+    }
+
+  .navigation {
+    display: none;
+  }
+  .logo{
+    width: 30%;
+    height: auto;
+}
 }
 </style>

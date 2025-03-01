@@ -1,4 +1,5 @@
 <script>
+import { store } from './store';
 import AppFooterShare from './components/AppFooterShare.vue';
 import AppSplashPage from './pages/AppSplashPage.vue';
 
@@ -10,7 +11,7 @@ export default {
   data() {
     return {
       //riattivare alla fine
-      flag: false,
+      flag: true,
       footerLinks: [
         { label: 'APPARTAMENTI', url: '#' },
         { label: 'RISTORANTI', url: '#' },
@@ -18,6 +19,23 @@ export default {
         { label: 'CONTACTS', url: '#' },
       ]
     };
+  },
+  computed: {
+    showMenu() {
+      // Accedi alla proprietà `showMenu` dal tuo store
+      return store.showMenu;
+    }
+  },
+  watch: {
+    showMenu(newValue) {
+      if (newValue) {
+        // Blocca lo scroll verticale
+        document.body.style.overflow = 'hidden';
+      } else {
+        // Ripristina lo scroll
+        document.body.style.overflow = '';
+      }
+    }
   },
 
   mounted(){
