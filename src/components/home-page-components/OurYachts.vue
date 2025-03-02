@@ -68,7 +68,7 @@ export default {
             <div class="row">
                 <div class="col-12 py-4">
                     <div class="title text-center py-4">
-                        <h2 class="title-s mb-3 fw-bold">Gallery</h2>
+                        <h2 class="title-s mb-3 fw-bold">Momenti di relax e natura</h2>
                         <div class="col-12 my-4" style="background-color:#ffff;">
                             <div class="col-1" style="height: 1px; background-color:#F1E2C5 ; margin:0 auto;"></div>
                         </div>

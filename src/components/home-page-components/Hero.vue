@@ -1,25 +1,21 @@
 <script>
+import { store } from '../../store';
+
 export default {
     name: 'Hero',
     data() {
         return {
-            showSearchInput: false,
-            navLinks: [
-                { navItem: 'Home', url: '/about' },
-                { navItem: 'Appartamenti', url: '' },
-                { navItem: 'Ristorante', url: '' },
-                { navItem: 'Servizi', url: '' }
-            ]
+            isVisible: false
         };
     },
-    methods: {
-        toggleSearch() {
-            this.showSearchInput = !this.showSearchInput;
-            console.log('ciao')
+    computed: {
+        storeVisible() {
+            return store.visibleComponents.hero;
         }
     },
-    mounted(){
-        console.log('il caricamento è stato preso')
+    mounted() {
+        console.log('il caricamento è stato preso');
+        store.showComponentWithDelay('hero');
     }
 };
 </script>
@@ -30,9 +26,8 @@ export default {
             <div class="row">
                 <div class="col-12">
                     <div class="card-content py-5">
-                        <div class="text-content">
-                            <h2 class="title-l"> Soggiorni rilassanti 
-                                <br>in campagna</h2>
+                        <div class="text-content" :class="{ 'fade-in': storeVisible }">
+                            <h2 class="title-l"> Soggiorni rilassanti <br>in campagna</h2>
                             <p class="font-custom mb-5">
                                 Soggiorna in un'oasi di tranquillità circondata dalla natura,
                                 <br>con piscina e servizi esclusivi.
@@ -45,10 +40,23 @@ export default {
         </div>
     </section>
 </template>
+
   
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
+
+
+.text-content {
+    opacity: 0; /* Inizialmente nascosto */
+    transform: translateY(20px); /* Leggera traslazione verso il basso */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transizione fluida */
+}
+
+.text-content.fade-in {
+    opacity: 1; /* Visibile */
+    transform: translateY(0); /* Posizione normale */
+}
 
 .logo{
     width: 40%;

@@ -43,18 +43,6 @@ export default {
                         </div>
                     </div>
                 </div>
-
-                <!-- Iscrizione alla newsletter -->
-                <div class="col-md-4 col-12 text-md-left newsletter">
-                    <h2 class="form-title mb-3">Newsletter</h2>
-                    <form class="form-inline">
-                        <div class="form-group mb-0 d-flex">
-                            <!-- <input type="email" v-model="email" class="form-control" placeholder="Enter your e-mail" required>
-                            <button type="submit" class="btn-primary-to-secondary fw-bold">Subscribe</button> -->
-                            <button class="btn-border-to-white">Learn More</button>
-                        </div>
-                    </form>  
-                </div>
             </div>
         </div>
         

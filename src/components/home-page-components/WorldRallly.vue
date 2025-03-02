@@ -10,10 +10,10 @@ export default {
             <div class="row">
                 <div class="col-8 py-5">
                     <div class="content py-5">
-                        <h2 class="title-xl text-uppercase mb-3">Lorem</h2>
-                        <h3 class="title-thin-m text-uppercase mb-3">Lorem Ipsum</h3>
-                        <p class="paragraph-white mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-                        <button class="btn-primary-to-secondary">More Details</button>
+                        <h2 class="title-xl  mb-3">Un angolo di paradiso nella natura</h2>
+                        <h3 class="title-thin-m mb-3">Immerso nella serenità della campagna toscana.</h3> 
+                        <p class="paragraph-white mb-5">Immergiti nella bellezza della campagna toscana. La nostra oasi di tranquillità è il luogo perfetto per rilassarti, riscoprire il contatto con la natura e goderti la serenità che solo la Toscana sa offrire</p>
+                        <button class="btn-primary-to-secondary">lorem ipsum</button>
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-none"></div>
@@ -62,7 +62,7 @@ export default {
         }
 
         .paragraph-white {
-            font-size: 1rem; /* Ridotto per tablet */
+            font-size: 1.5rem; /* Ridotto per tablet */
         }
     }
 
@@ -77,7 +77,7 @@ export default {
         }
 
         .paragraph-white {
-            font-size: 0.9rem; /* Ulteriore riduzione per dispositivi mobili */
+            font-size: 1rem; /* Ulteriore riduzione per dispositivi mobili */
         }
     }
 }

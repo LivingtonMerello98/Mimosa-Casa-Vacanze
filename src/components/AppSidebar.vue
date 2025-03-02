@@ -82,13 +82,29 @@ export default{
     z-index: 999;
 }
 
-ul{
-    li{
-        a{
+ul {
+    li {
+        a {
             color: white;
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+
+            &:hover {
+                color: white; 
+                background-color: rgba(255, 255, 255, 0.1);
+                text-decoration: none; 
+            }
+
+            &:focus {
+                outline: none;  
+                color: white;  
+                background-color: rgba(255, 255, 255, 0.3);  
+                text-decoration: none;  
+            }
         }
     }
 }
+
 
 .social-icon {
     width: 30px;

@@ -41,7 +41,7 @@ export default {
         <div class="container py-5">
             <div class="row">
                 <div class="title-container text-center py-5">
-                    <h2 class="title-s">Testimonials</h2>
+                    <h2 class="title-s">Le esperienze dei nostri visitatori</h2>
                 </div>
                 <div class="col-12 my-4" style="background-color:#ffff;">
                     <div class="col-1" style="height: 1px; background-color:#F1E2C5 ; margin:0 auto;">
@@ -86,7 +86,8 @@ export default {
 }
 
 .card {
-    background-color: $custom-transparent-white-cards;
+    //background-color: $custom-transparent-white-cards;
+    background-color: $custom-primary-color;
     max-width: 80%;
 }
 
