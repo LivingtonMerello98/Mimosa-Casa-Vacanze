@@ -2,13 +2,13 @@
 export default {
     name: 'AppSplashPage',
     data() {
-        // Array di frasi a tema spaziale
         const phrases = [
-            "Lorem ipsum",
+            "Esplora il nostro agriturismo",
+            "Comfort e relax immersi nella natura",
+            "Camere accoglienti per un soggiorno indimenticabile",
         ];
 
         return {
-            // Seleziona una frase casuale
             randomPhrase: phrases[Math.floor(Math.random() * phrases.length)]
         };
     }
@@ -19,11 +19,11 @@ export default {
     <div class="splashPage">
         <div class="container d-flex justify-content-center align-items-center content">
             <!-- Razzo -->
-            <img src="/images/mimosa_logo.svg" class="rocket" alt="Rocket">
+            <img src="/images/mimosa_logo.svg" class="rocket mb-3" alt="Rocket">
             <!-- Frase casuale sotto il razzo -->
-            <!-- <span class="text-white random-phrase">{{ randomPhrase }}</span> -->
+            <span class=" random-phrase">{{ randomPhrase }}</span>
             <!-- Spinner -->
-            <div class="spinner mt-4"></div>
+            <div class="spinner mt-5"></div>
         </div>
     </div>
 </template>
@@ -52,8 +52,8 @@ body {
 .spinner {
     width: 50px;
     height: 50px;
-    border: 5px solid rgba(255, 255, 255, 0.3); /* Cerchio trasparente */
-    border-top: 5px solid white; /* Linea visibile */
+    border: 3px solid rgba(255, 255, 255, 0); /* Cerchio trasparente */
+    border-top: 5px solid $custom-tertiary-color; /* Linea visibile */
     border-radius: 50%;
     animation: spin 1s linear infinite; /* Rotazione infinita */
     margin-bottom: 20px; /* Distanza dal razzo */
@@ -92,7 +92,7 @@ body {
 .random-phrase {
     font-size: 14px;
     font-weight: thin;
-    color: white;
+    color:$custom-tertiary-color;
     margin-top: 20px; /* Aggiunge un margine sopra la frase */
 }
 

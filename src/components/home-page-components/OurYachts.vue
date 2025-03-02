@@ -1,9 +1,18 @@
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import AppCarousel from '../AppCarousel.vue';
 export default {
     name: 'OurYachts',
+    components: {
+        Swiper,
+        SwiperSlide,
+        AppCarousel
+    },
     data() {
         return {
-            yachts: [
+            elements: [
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'express',
@@ -59,24 +68,16 @@ export default {
             <div class="row">
                 <div class="col-12 py-4">
                     <div class="title text-center py-4">
-                        <h2 class="title-s mb-3 fw-bold">Lorem ipsum</h2>
+                        <h2 class="title-s mb-3 fw-bold">Gallery</h2>
                         <div class="col-12 my-4" style="background-color:#ffff;">
-                            <div class="col-1" style="height: 1px; background-color:#F1E2C5 ; margin:0 auto;">
-                            </div>
+                            <div class="col-1" style="height: 1px; background-color:#F1E2C5 ; margin:0 auto;"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 p-3" v-for="yacht in yachts" :key="yacht.url">
-                    <div class="img-content position-relative">
-                        <img :src="yacht.url" class="yacht-img">
-                        <div class="overlay">
-                            <div class="text-center">
-                                <div v-html="yacht.icon" class=" icon-custom-primary-color"></div>
-                                <div class="hover-text fs-2 fw-bold">{{ yacht.name }}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                <!-- Usando il componente figlio "AppCarousel" e passando i dati -->
+                <AppCarousel :elements="elements" />
+
                 <div class="col-12 text-center py-5">
                     <button class="btn-border-to-white">View All</button>
                 </div>
