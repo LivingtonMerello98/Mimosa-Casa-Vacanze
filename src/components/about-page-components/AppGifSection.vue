@@ -1,20 +1,45 @@
 <script>
-export default {
-    name: "AppGifSection"
+import { store } from '../../store';
 
-}
+export default {
+    name: "AppGifSection",
+    data() {
+        return {
+            textContent: "text-content"
+        };
+    },
+    props: {
+        text: {
+            type: String,
+            required: true
+        }
+    },
+    computed: {
+        animationClass() {
+            console.log("[DEBUG] Computed: store.visibleComponents.appgifsection =", store.visibleComponents.appgifsection);
+            return store.visibleComponents.appgifsection 
+                ? store.animationClasses.visible 
+                : store.animationClasses.hidden;
+        }
+    },
+    mounted() {
+        store.showComponentWithDelay('appgifsection'); 
+    }
+};
 </script>
 
 <template>
     <section class="showcase">
         <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 texts-and-button">
-                        <p class="mb-5">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                        </p>
-                        <button class="btn-primary-to-white mb-5">Learn More</button>
+            <div v-if="text">
+                <div class="container" :class="[textContent, animationClass]">
+                    <div class="row">
+                        <div class="col-8 texts-and-button">
+                            <p class="mb-5">
+                                {{ text }}
+                            </p>
+                            <button class="btn-primary-to-white mb-5">Learn More</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -25,6 +50,18 @@ export default {
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
+
+.text-content {
+    opacity: 0; /* Inizialmente nascosto */
+    transform: translateY(20px); /* Leggera traslazione verso il basso */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transizione fluida */
+}
+
+.text-content.opacity-100 {
+    opacity: 1; /* Visibile */
+    transform: translateY(0); /* Posizione normale */
+}
+
 
 .btn-primary-to-white {
     @include btn-primary-to-white;
@@ -65,7 +102,7 @@ export default {
         padding-top: 100px;
 
         p {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -77,38 +114,21 @@ export default {
         }
 
         .btn-primary-to-white {
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
         }
     }
 
     /* Imposta .col-6 su larghezza intera a 768px o meno */
     @media (max-width: 768px) {
-        .col-6 {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
 
-        p {
-            font-size: 1.2rem;
-        }
-
-        .btn-primary-to-white {
-            font-size: 0.9rem;
-            padding: 0.4rem 0.8rem;
-        }
     }
 
     @media (max-width: 576px) {
         padding-top: 50px;
 
-        p {
-            font-size: 1rem;
-        }
 
         .btn-primary-to-white {
             font-size: 0.8rem;
-            padding: 0.3rem 0.6rem;
         }
     }
 }

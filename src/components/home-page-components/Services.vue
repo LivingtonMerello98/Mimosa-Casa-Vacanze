@@ -1,7 +1,7 @@
 <script>
 import { faAnchor, faCar, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faUser, faStar, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
-
+import { store } from '../../store'; 
 export default {
     name: 'Services',
     data() {
@@ -23,6 +23,7 @@ export default {
         }
     },
     mounted() {
+        store.observeElementsWithFadeIn();
         //  window.addEventListener('scroll', this.parallaxEffect);
     },
     beforeDestroy() {
@@ -40,7 +41,7 @@ export default {
 
 <template>
     <section>
-        <div class="container py-5">
+        <div class="container py-5 fade-in-element">
             <div class="row">
                 <div class="col-lg-12 col-md-6 col-sm-12 text-center">
                     <h2 class="title-section py-3">Esperienze Uniche</h2>
@@ -74,6 +75,18 @@ export default {
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
+
+/* Classi di animazione fade-in */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-element.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .custom-primary-color {
     background-color: $custom-primary-color;

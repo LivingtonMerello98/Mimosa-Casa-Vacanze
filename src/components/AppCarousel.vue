@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-
+import { store } from '../store';
 
 export default {
     name: 'AppCarousel',

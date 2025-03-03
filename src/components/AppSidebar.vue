@@ -42,7 +42,7 @@ export default{
         
         <div class="col-md-12 px-3">
 
-            <ul class="nav d-flex flex-column">
+            <ul class="nav d-flex flex-column"  @click="toggleMenu()" >
                 <li v-for="(link, index) in navLinks" :key="index">
                     <!--<router-link></router-link> per la navigazione tra i link-->
                     <router-link v-if="link.url" :to="link.url" class="nav-link mx-1 custom-nav-link">{{

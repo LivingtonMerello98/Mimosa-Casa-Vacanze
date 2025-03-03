@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import AppCarousel from '../AppCarousel.vue';
+import { store } from '../../store';
+
 export default {
     name: 'OurYachts',
     components: {
@@ -55,7 +57,10 @@ export default {
                 }
             ]
         }
-    }
+    },
+    mounted() {
+        store.observeElementsWithFadeIn();
+    },
 }
 </script>
 
@@ -64,7 +69,7 @@ export default {
 
 <template>
     <section class="py-5 bg custom-primary-color">
-        <div class="container">
+        <div class="container fade-in-element">
             <div class="row">
                 <div class="col-12 py-4">
                     <div class="title text-center py-4">
@@ -91,6 +96,18 @@ export default {
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
+
+/* Classi di animazione fade-in */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-element.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .custom-primary-color {
     background-color: $custom-primary-color;

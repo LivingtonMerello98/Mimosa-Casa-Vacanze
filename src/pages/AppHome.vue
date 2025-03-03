@@ -36,17 +36,11 @@ export default {
             // Accedi alla proprietà `showMenu` dal tuo store
             return store.showMenu;
         }
-    },
-    mounted(){
-        console.log(store.showMenu)
     }
 }
 </script>
 
 <template>
-    <div v-if="showMenu"> 
-        <AppSidebar/> 
-    </div>
     <AppUniversalHeader />
     <HeaderAboutContacts />
     <Hero />

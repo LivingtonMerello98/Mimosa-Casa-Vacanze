@@ -2,57 +2,40 @@ import { reactive } from 'vue';
 
 export const store = reactive({
     showMenu: false,
-
-    // Timeout globale per l'animazione (modificabile facilmente)
-    animationDelay: 2100,
-
-    // Stato visibilità componenti
-    visibleComponents: {
-        hero: false
+    visibleComponents: {},
+    animationClasses: {
+        hidden: 'opacity-0 translate-y-5 transition-opacity transition-transform duration-1000 ease-out',
+        visible: 'opacity-100 translate-y-0'
     },
 
     toggleMenu() {
-        console.log('menu aperto');
         this.showMenu = !this.showMenu;
     },
 
-    // Mostra il componente con il delay predefinito
-    showComponentWithDelay(componentName) {
-        if (componentName in store.visibleComponents) {
-            setTimeout(() => {
-                store.visibleComponents[componentName] = true;
-            }, store.animationDelay);
-        } else {
-            console.warn(`Il componente ${componentName} non è stato inizializzato nello store.`);
-        }
+    showComponentWithDelay(componentName, delay = 2100) {
+        setTimeout(() => {
+            this.visibleComponents[componentName] = true;
+        }, delay);
     },
 
     hideComponent(componentName) {
-        if (componentName in store.visibleComponents) {
-            store.visibleComponents[componentName] = false;
-        }
+        this.visibleComponents[componentName] = false;
+    },
+
+    observeElementsWithFadeIn() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const target = entry.target;
+                if (entry.isIntersecting) {
+                    target.classList.add('fade-in');
+                    observer.unobserve(target);
+                }
+            });
+        }, {
+            threshold: 0.5,
+        });
+
+        const elements = document.querySelectorAll('.fade-in-element');
+        elements.forEach((el) => observer.observe(el));
     }
 });
-
-
-
-
-
-
-
-// links
-// Links relativi alle ancore
-// anchors: [
-//     {
-//         name: 'Certificates',
-//         link: '#certificates',  // Link per scrollare verso la sezione certificati
-//     },
-//     {
-//         name: 'Projects',
-//         link: '#projects',  // Link per scrollare verso la sezione progetti
-//     },
-//     {
-//         name: 'Get In Touch',
-//         link: '#contact',  // Link per scrollare verso la sezione contatti
-//     },
-// ]

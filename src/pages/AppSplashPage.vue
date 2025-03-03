@@ -18,11 +18,8 @@ export default {
 <template>
     <div class="splashPage">
         <div class="container d-flex justify-content-center align-items-center content">
-            <!-- Razzo -->
             <img src="/images/mimosa_logo.svg" class="rocket mb-3" alt="Rocket">
-            <!-- Frase casuale sotto il razzo -->
             <span class=" random-phrase">{{ randomPhrase }}</span>
-            <!-- Spinner -->
             <div class="spinner mt-5"></div>
         </div>
     </div>
@@ -45,7 +42,7 @@ export default {
 
 /* Aggiungi queste regole per impedire lo scroll globale */
 body {
-    overflow: hidden; /* Disabilita lo scroll della pagina intera */
+    overflow: hidden;
 }
 
 /* Spinner styling */
@@ -72,19 +69,18 @@ body {
 .rocket {
     width: 200px;
     height: auto;
-    //animation: float 1s ease-in-out infinite; /* Animazione infinita */
 }
 
 /* Aggiungi la definizione dell'animazione 'float' */
 @keyframes float {
     0% {
-        transform: translateY(0); /* Posizione iniziale */
+        transform: translateY(0); 
     }
     50% {
-        transform: translateY(-30px); /* Spostamento verso l'alto */
+        transform: translateY(-30px); 
     }
     100% {
-        transform: translateY(0); /* Torna alla posizione iniziale */
+        transform: translateY(0); 
     }
 }
 

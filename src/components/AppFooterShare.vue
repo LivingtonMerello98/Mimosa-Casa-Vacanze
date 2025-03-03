@@ -1,4 +1,5 @@
 <script>
+import { store } from '../store';
 export default {
     name: 'AppFooterShare',
     props: {
@@ -8,12 +9,15 @@ export default {
             default: () => []
         }
     },
+    mounted() {
+        store.observeElementsWithFadeIn();
+    },
 };
 </script>
 
 <template>
     <footer class="color-share">
-        <div class="container py-5">
+        <div class="container py-5 fade-in-element">
             <div class="row mb-5 py-5">
                 <!-- Logo e slogan -->
                 <div class="col-md-4 col-12 mb-4 mb-md-0 d-flex align-items-center">
@@ -48,7 +52,7 @@ export default {
         
         <!-- Footer bottom -->
         <section class="bt-footer py-3">
-            <div class="container">
+            <div class="container fade-in-element">
                 <div class="row">
                     <div class="col-md-6 col-12 d-flex justify-content-md-start py-1">
                         <p class="text-white mr-md-2 ">&copy; Mimosa. Casa Vacanza </p>
@@ -69,6 +73,19 @@ export default {
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as *;
 @use 'src/assets/partials/variables' as *;
+
+
+/* Classi di animazione fade-in */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-element.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .btn-border-to-white {
         @include btn-border-to-white;

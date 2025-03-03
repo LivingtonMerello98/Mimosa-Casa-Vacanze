@@ -9,12 +9,13 @@ export default {
         };
     },
     computed: {
-        storeVisible() {
-            return store.visibleComponents.hero;
+        animationClass() {
+            return store.visibleComponents.hero 
+                ? store.animationClasses.visible 
+                : store.animationClasses.hidden;
         }
     },
     mounted() {
-        console.log('il caricamento è stato preso');
         store.showComponentWithDelay('hero');
     }
 };
@@ -26,7 +27,7 @@ export default {
             <div class="row">
                 <div class="col-12">
                     <div class="card-content py-5">
-                        <div class="text-content" :class="{ 'fade-in': storeVisible }">
+                        <div class="text-content" :class="animationClass">
                             <h2 class="title-l"> Soggiorni rilassanti <br>in campagna</h2>
                             <p class="font-custom mb-5">
                                 Soggiorna in un'oasi di tranquillità circondata dalla natura,

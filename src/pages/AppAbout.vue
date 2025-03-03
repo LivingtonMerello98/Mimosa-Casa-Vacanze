@@ -32,37 +32,26 @@ export default {
         return {
           elements: [
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Express',
                     url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Cruiser',
                     url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Sport cruiser',
                     url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                },
+                {
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                },
+                {
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                },
+                {
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                },
+          ],
 
-                },
-                {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Flybridges',
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
-                },
-                {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Sedan bridges',
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
-                },
-                {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Tri-deck',
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
-                },
-            ]
+          text:'Scopri il comfort e la serenità dei nostri appartamenti, pensati per offrirti un soggiorno rilassante nel cuore della campagna toscana',
         }
     }
 };
@@ -73,7 +62,7 @@ export default {
   <HeaderAboutContacts />
 
   <main>
-    <AppGifSection />
+    <AppGifSection :text="text" />
     <AppWhyChooseUs />
     <AppAboutUs />
     <AppFeaturedProjects :elements="elements" />

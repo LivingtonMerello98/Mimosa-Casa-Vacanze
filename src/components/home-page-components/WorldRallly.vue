@@ -1,12 +1,16 @@
 <script>
+import { store } from '../../store';
 export default {
-    name: 'WorldRally'
+    name: 'WorldRally',
+    mounted() {
+        store.observeElementsWithFadeIn();
+    },
 }
 </script>
 
 <template>
     <section class="bg-image">
-        <div class="container py-5">
+        <div class="container py-5 fade-in-element">
             <div class="row">
                 <div class="col-8 py-5">
                     <div class="content py-5">
@@ -25,6 +29,18 @@ export default {
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
+
+/* Classi di animazione fade-in */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-element.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .bg-image {
     background-image: url('/images/nature.png');

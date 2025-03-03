@@ -1,7 +1,12 @@
 <script>
+import { store } from '../../store'; 
 export default {
-    name: 'OurHistory'
-}
+    name: 'OurHistory',
+    mounted() {
+        // Avvia l'osservazione dell'elemento quando il componente viene montato
+        store.observeElementsWithFadeIn();
+    }
+};
 </script>
 
 <template>
@@ -9,12 +14,12 @@ export default {
         <div class="container py-5">
             <div class="row">
 
-                <div class="col-md-6 col-12 img-container">
+                <div class="col-md-6 col-12 img-container fade-in-element">
                     <img src="https://incrociata.it/wp-content/uploads/2019/10/incrociata-840x560.jpg" class="img-fluid img-agriturismo" alt="Agriturismo">
                 </div>
 
                 <div class="col-md-12 col-sm-12 col-lg-6 py-5">
-                    <div class="text col-12 text-lg-start"> <!-- Classi aggiunte per centrare solo su mobile/tablet -->
+                    <div class="text col-12 text-lg-start fade-in-element"> <!-- Classi aggiunte per centrare solo su mobile/tablet -->
                         <h1 class="title-section mb-2">Vivi la nostra storia</h1>
                         <!-- hr provvisorio -->
                         <div class="col-12 d-flex my-5" style="background-color: #ffff;">
@@ -51,41 +56,53 @@ export default {
     width: 85%;
 }
 
-section{
-background-color: white;
+section {
+    background-color: white;
 }
 
 .title-section {
-        @include title-section;
-    }
+    @include title-section;
+}
 
-    .btn-secondary {
-        @include btn-secondary;
-    }
+.btn-secondary {
+    @include btn-secondary;
+}
 
-    .paragraph-bold {
-        @include paragraph-bold;
-    }
+.paragraph-bold {
+    @include paragraph-bold;
+}
 
-    .paragraph-thin {
-        @include paragraph-thin;
-    }
+.paragraph-thin {
+    @include paragraph-thin;
+}
+
+/* Classi di animazione fade-in */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-element.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* Media query per tablet e mobile */
-
 @media (max-width: 768px) {
-    .img-container{
+    .img-container {
         display: none;
     }
 }
+
 @media (max-width: 991px) {
     .text-center {
         text-align: center;
     }
-    p{
+    p {
         font-size: 16px;
     }
-    .img-container{
+    .img-container {
         display: none;
     }
 }

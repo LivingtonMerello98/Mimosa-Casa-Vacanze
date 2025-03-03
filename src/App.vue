@@ -2,11 +2,13 @@
 import { store } from './store';
 import AppFooterShare from './components/AppFooterShare.vue';
 import AppSplashPage from './pages/AppSplashPage.vue';
+import AppSidebar from './components/AppSidebar.vue';
 
 export default {
   components: {
     AppFooterShare,
-    AppSplashPage
+    AppSplashPage,
+    AppSidebar
   },
   data() {
     return {
@@ -49,7 +51,10 @@ export default {
 <template>
   <div v-if="flag" class="overflowHidden">
       <AppSplashPage/>
-    </div>
+  </div>
+  <div v-if="showMenu"> 
+        <AppSidebar/> 
+  </div>
   <router-view></router-view>
   <AppFooterShare :links="footerLinks" />
 </template>
