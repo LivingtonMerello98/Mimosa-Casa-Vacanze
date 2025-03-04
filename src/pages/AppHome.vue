@@ -50,7 +50,7 @@ export default {
     <OurYachts />
     <WorldRallly />
     <Blog />
-    <Testimonials />
+    <!-- <Testimonials /> -->
 </template>
 
 <style lang="scss" scoped>

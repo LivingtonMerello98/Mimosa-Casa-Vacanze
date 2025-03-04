@@ -27,42 +27,39 @@ export default {
     AppTestimonials,
     AppFeaturedProjects,
   },
-
-data() {
+  data() {
         return {
           elements: [
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Express',
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlp-HhZIkqB4HCOSFOI_FZAIYrIBs0MUjjg&s',
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Cruiser',
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlp-HhZIkqB4HCOSFOI_FZAIYrIBs0MUjjg&s'
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Sport cruiser',
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlp-HhZIkqB4HCOSFOI_FZAIYrIBs0MUjjg&s'
-
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Flybridges',
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlp-HhZIkqB4HCOSFOI_FZAIYrIBs0MUjjg&s'
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Sedan bridges',
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlp-HhZIkqB4HCOSFOI_FZAIYrIBs0MUjjg&s'
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
                 {
-                    //icon: '<i class="fa-solid fa-anchor"></i>',
-                    //name: 'Tri-deck',
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlp-HhZIkqB4HCOSFOI_FZAIYrIBs0MUjjg&s'
+                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
                 },
-            ]
+          ],
+          backgroundImage:'/images/restaurant.png',
+          text:'Gusta piatti tradizionali preparati con ingredienti freschi e locali, in un ambiente accogliente.',
+          description: {
+            "title": "Il gusto della Toscana nel nostro ristorante",
+            "subtitle": "Piatti tradizionali preparati con ingredienti freschi e locali",
+            "paragraph": "Il nostro ristorante è il cuore della tradizione toscana. Ogni piatto è preparato con ingredienti freschi e genuini, offrendo un'esperienza culinaria unica. Dalla pasta fatta in casa ai piatti a base di carne e pesce, ogni portata racconta la storia del nostro territorio. Un ambiente accogliente e familiare dove ogni pasto diventa un’occasione speciale per scoprire i sapori autentici della Toscana."
+          },
+          carouselDescription: {
+            "title": "Scopri il nostro ristorante",
+            "paragraph": "Gusta piatti tradizionali in un ambiente accogliente, dove ogni pasto è preparato con ingredienti freschi e locali."
+          },
         }
     }
 };
@@ -71,12 +68,11 @@ data() {
 <template>
   <UniversalHeader />
   <HeaderAboutContacts />
-
   <main>
-    <AppGifSection />
-    <AppAboutUs />
-    <AppFeaturedProjects :elements="elements" />
-    <AppAboutUs />
-    <AppFeaturedProjects />
+    <AppGifSection :backgroundImage="backgroundImage" :text="text" />
+    <AppAboutUs :description="description" />
+    <AppFeaturedProjects :carouselDescription="carouselDescription" :paragraph="paragraph" :elements="elements" />
+    <!-- <AppWhyChooseUs /> -->
   </main>
 </template>
+

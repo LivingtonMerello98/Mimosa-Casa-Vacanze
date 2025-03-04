@@ -12,6 +12,10 @@ export default {
         text: {
             type: String,
             required: true
+        },
+        backgroundImage: {
+            type: String,  // Tipo String per l'URL dell'immagine
+            required: true
         }
     },
     computed: {
@@ -29,7 +33,7 @@ export default {
 </script>
 
 <template>
-    <section class="showcase">
+    <section class="showcase" :style="{ backgroundImage: 'url(' + backgroundImage + ')' }">
         <div>
             <div v-if="text">
                 <div class="container" :class="[textContent, animationClass]">
@@ -71,20 +75,9 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('/images/appartament.png');
     background-repeat: no-repeat;
-    background-size: cover;
-
-    // video {
-    //     position: absolute;
-    //     top: 100;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: fill;
-    // }
+    background-size: cover;  /* Lasciamo la proprietà size generica */
 }
-
 
 .texts-and-button {
     position: relative;
@@ -118,17 +111,11 @@ export default {
         }
     }
 
-    /* Imposta .col-6 su larghezza intera a 768px o meno */
-    @media (max-width: 768px) {
-
-    }
-
     @media (max-width: 576px) {
         padding-top: 50px;
 
-
         .btn-primary-to-white {
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
 }
