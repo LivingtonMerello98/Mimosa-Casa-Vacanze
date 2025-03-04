@@ -52,9 +52,11 @@ export default {
     align-items: center; /* Centra verticalmente */
 }
 
-.img-agriturismo{
+.img-agriturismo {
     width: 85%;
+    border-radius:20px; 
 }
+
 
 section {
     background-color: white;

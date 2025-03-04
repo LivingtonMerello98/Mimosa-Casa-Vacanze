@@ -20,7 +20,7 @@ export default {
                 },
                 {
                     navItem: 'contacts',
-                    url: ''
+                    url: '/contacts'
                 }
             ]
         }
@@ -83,6 +83,10 @@ section {
     font-weight: 600;
 
     &:hover {
+        color:#F1E2C5;
+        text-decoration: underline ;
+    }
+    &:focus{
         color:#F1E2C5;
     }
 }

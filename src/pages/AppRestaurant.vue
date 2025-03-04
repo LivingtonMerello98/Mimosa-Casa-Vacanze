@@ -31,22 +31,22 @@ export default {
         return {
           elements: [
                 {
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
                 },
                 {
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
                 },
                 {
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
                 },
                 {
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
                 },
                 {
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
                 },
                 {
-                    url: 'https://lombardiasecrets.com/wp-content/webpc-passthru.php?src=https://lombardiasecrets.com/wp-content/uploads/2024/01/Rosa-Grand-Milano-Lombardia-Secrets1783.jpg&nocache=1'
+                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
                 },
           ],
           backgroundImage:'/images/restaurant.png',
