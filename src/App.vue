@@ -85,6 +85,7 @@ export default {
   font-size: 16px;
   cursor: pointer;
   z-index: 98;     
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 .call-button:hover {

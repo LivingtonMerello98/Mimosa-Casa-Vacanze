@@ -15,12 +15,12 @@ export default{
                     url: '/ristoranti'
                 },
                 {
-                    navItem: 'servizi',
-                    url: ''
+                    navItem: 'attività',
+                    url: '/attivita'
                 },
                 {
                     navItem: 'contacts',
-                    url: ''
+                    url: '/contacts'
                 }
             ]
         }

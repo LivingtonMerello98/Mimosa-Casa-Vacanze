@@ -4,6 +4,7 @@ import AppHome from './pages/AppHome.vue'
 import AppAbout from './pages/AppAbout.vue'
 import AppContacts from './pages/AppContacts.vue'
 import AppRestaurant from './pages/AppRestaurant.vue';
+import AppService from './pages/AppService.vue';
 import test from './pages/test.vue'
 
 
@@ -31,6 +32,11 @@ const router = createRouter({
             name: 'contacts',
             path: '/contacts',
             component: AppContacts
+        },
+        {
+            name: 'attività',
+            path: '/attivita',
+            component: AppService
         },
         {
             //file per testing

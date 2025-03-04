@@ -24,7 +24,7 @@ export default {
 
 <template>
     <section>
-        <div class="container py-5 fade-in-element">
+        <div class="container py-5">
             <h2 class="py-5">{{ carouselDescription.title }}</h2>  <!-- Correzione qui -->
             <div class="col-12  my-4" style="background-color: rgba(0, 0, 0, 0.037);">
                 <div class="col-1" style="height: 1px; background-color:#938A77;">
