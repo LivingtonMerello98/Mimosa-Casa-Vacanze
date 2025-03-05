@@ -6,9 +6,7 @@ import AppContacts from './pages/AppContacts.vue'
 import AppRestaurant from './pages/AppRestaurant.vue';
 import AppService from './pages/AppService.vue';
 import test from './pages/test.vue'
-
-
-
+import AppApartment from './pages/AppApartment.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -22,6 +20,11 @@ const router = createRouter({
             name: 'appartamenti',
             path: '/appartamenti',
             component: AppAbout
+        },
+        {
+            name: 'apartments-details',
+            path: '/appartamenti/:name',
+            component: AppApartment
         },
         {
             name: 'restaurants',
@@ -39,12 +42,10 @@ const router = createRouter({
             component: AppService
         },
         {
-            //file per testing
             name: 'test',
             path: '/test',
             component: test
         }
-
     ],
 });
 

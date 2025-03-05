@@ -68,7 +68,7 @@ export default {
     
     <router-view></router-view>
     
-    <AppFooterShare :links="footerLinks" />
+    <AppFooterShare/>
   </div>
 </template>
 

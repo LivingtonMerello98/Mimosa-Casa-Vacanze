@@ -1,5 +1,6 @@
 <script>
 import { store } from '../store';
+
 export default {
     name: 'AppFooterShare',
     props: {
@@ -8,6 +9,17 @@ export default {
             required: true,
             default: () => []
         }
+    },
+    data() {
+        return {
+            logo: '/images/mimosa_logo.svg',
+            navLinks: [
+                { navItem: 'appartamenti', url: '/appartamenti' },
+                { navItem: 'ristoranti', url: '/ristoranti' },
+                { navItem: 'attività', url: '/attivita' },
+                { navItem: 'contatti', url: '/contacts' }
+            ]
+        };
     },
     mounted() {
         store.observeElementsWithFadeIn();
@@ -22,29 +34,42 @@ export default {
                 <!-- Logo e slogan -->
                 <div class="col-md-4 col-12 mb-4 mb-md-0 d-flex align-items-center">
                     <div class="logo-slogan">
-                        <img src="/images/mimosa_logo.svg"
-                            alt="" class="logo mb-4">
-                        <p class="fs-">Lorem Ipsum is simply dummy <br> sailing across the seas…</p>
+                        <img :src="logo" alt="Logo Mimosa Casa Vacanze" class="logo mb-4">
+                        <p class="fs-5">angolo di paradiso <br>
+                            nel cuore dell'Italia</p>
                     </div>
                 </div>
 
                 <!-- Link di navigazione -->
-                <div class="col-md-4 col-12 mb-4 mb-md-0">
+                <div class="col-md-4 col-12 mb-4 mb-md-0 ">
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <li class="mb-3 custom-font-size" v-for="(link, index) in links.slice(0, 2)" :key="index" :href="link.url">
-                                    {{ link.label }}
+                                <li class="mb-3 custom-font-size" v-for="(link, index) in navLinks.slice(0, 2)" :key="index">
+                                    <router-link :to="link.url" class="nav-link custom-nav-link">{{ link.navItem }}</router-link>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul>
-                                <li class="mb-3 custom-font-size" v-for="(link, index) in links.slice(2, 6)" :key="index" :href="link.url">
-                                    {{ link.label }}
+                                <li class="mb-3 custom-font-size" v-for="(link, index) in navLinks.slice(2, 4)" :key="index">
+                                    <router-link :to="link.url" class="nav-link custom-nav-link">{{ link.navItem }}</router-link>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-md-0">
+                    <div class="social-icon-circle d-flex justify-content-center align-items-center">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'facebook']" class="icon"/>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'twitter']" class="mx-4 icon" />
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'instagram']" class="icon"/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -55,12 +80,12 @@ export default {
             <div class="container fade-in-element">
                 <div class="row">
                     <div class="col-md-6 col-12 d-flex justify-content-md-start py-1">
-                        <p class="text-white mr-md-2 ">&copy; Mimosa. Casa Vacanza </p>
-                        <p class="text-white mx-2 mr-md-2"> | Privacy Policy</p>
-                        <p class="text-white mr-md-2"> | Terms of Use</p>
+                        <p class="text-white mr-md-2">&copy; Mimosa. Casa Vacanza</p>
+                        <p class="text-white mx-2 mr-md-2"> | PARTITA IVA: 03227650540</p>
+                        <!-- <p class="text-white mr-md-2"> | Terms of Use</p> -->
                     </div>
                     <div class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end mt-md-0">
-                        <a href="#" class="text-light mx-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -70,9 +95,30 @@ export default {
     </footer>
 </template>
 
+
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as *;
 @use 'src/assets/partials/variables' as *;
+
+.icon{
+    font-size: 28px;
+    color:white;
+}
+
+.custom-nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14.4px;
+    padding: 27px 23px 22px;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline ;
+    }
+    &:focus{
+        color:#F1E2C5;
+    }
+}
 
 
 /* Classi di animazione fade-in */
@@ -193,5 +239,26 @@ p {
     .bt-footer {
         text-align: center;
     }
+
+    @media (max-width: 426px) {
+    .logo-slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        width: 60%; /* Adatta la dimensione dell'immagine */
+        margin-bottom: 20px; /* Puoi aggiustare il margine come desideri */
+    }
+
+    .logo-slogan p {
+        font-size: 14px; /* Puoi anche ridurre ulteriormente la dimensione del testo */
+    }
+}
+
 }
 </style>

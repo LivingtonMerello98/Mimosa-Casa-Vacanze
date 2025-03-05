@@ -45,8 +45,9 @@ export default {
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 navigation">
                         <li v-for="(link, index) in navLinks" :key="index">
                             <!--<router-link></router-link> per la navigazione tra i link-->
-                            <router-link v-if="link.url" :to="link.url" class="nav-link mx-1 custom-nav-link">{{
-                                link.navItem }}</router-link>
+                            <router-link v-if="link.url" :to="link.url" class="nav-link mx-1 custom-nav-link">
+                                {{link.navItem }}
+                            </router-link>
                             <a v-else href="#" class="nav-link px-2 mx-1 custom-nav-link">{{ link.navItem }}</a>
                         </li>
                     </ul>

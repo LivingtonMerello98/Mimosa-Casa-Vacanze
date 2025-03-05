@@ -5,19 +5,19 @@ export default {
         return {
             posts: [
                 {
-                    image: '/images/pharm-overlay.png',
-                    data: 'December 16, 2020',
-                    title: 'Lorem Ipsum is simply dummy text of the printing'
+                    image: '/images/bevagna/DSC_0240.JPG',
+                    data: '150 € a notte',
+                    title: 'bevagna'
                 },
                 {
-                    image: '/images/pharm-overlay.png',
-                    data: 'December 16, 2020',
-                    title: 'Lorem Ipsum is simply dummy text of the printing'
+                    image: '/images/perugia/DSC_0233.JPG',
+                    data: '150 € a notte',
+                    title: 'perugia'
                 },
                 {
-                    image: '/images/pharm-overlay.png',
-                    data: 'December 16, 2020',
-                    title: 'Lorem Ipsum is simply dummy text of the printing'
+                    image: '/images/trevi/DSC_0217.JPG',
+                    data: '150 € a notte',
+                    title: 'trevi'
                 }
             ]
         }
@@ -29,7 +29,7 @@ export default {
     <div class="container py-5">
         <div class="row">
             <div class="col-12 text-center py-5">
-                <h2 class="title-section mb-2">Lorem Ipsum</h2>
+                <h2 class="title-section mb-2">Appartamenti e Allogi </h2>
 
                 <div class="col-12  my-5" style="background-color: #ffff;">
                     <div class="col-1" style="height: 1px; background-color:#F1E2C5 ; margin: 0 auto;">

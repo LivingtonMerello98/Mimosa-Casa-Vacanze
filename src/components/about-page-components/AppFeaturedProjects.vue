@@ -25,23 +25,20 @@ export default {
 <template>
     <section>
         <div class="container py-5">
-            <h2 class="py-5">{{ carouselDescription.title }}</h2>  <!-- Correzione qui -->
-            <div class="col-12  my-4" style="background-color: rgba(0, 0, 0, 0.037);">
-                <div class="col-1" style="height: 1px; background-color:#938A77;">
-                </div>
+            <h2 class="py-5">{{ carouselDescription.title }}</h2>
+            <div class="col-12 my-4" style="background-color: rgba(0, 0, 0, 0.037);">
+                <div class="col-1" style="height: 1px; background-color:#938A77;"></div>
             </div>
-            <p class="paragraph-thin">{{ carouselDescription.paragraph }}</p>  <!-- Correzione qui -->
+            <p class="paragraph-thin">{{ carouselDescription.paragraph }}</p>
             <div class="row py-5">
-                <div class="col-lg-4 col-md-6 col-sm-12 py-3 px-3" v-for="element in elements" :key="element.url" >
-                    <div class="img-content position-relative">
-                        <img :src="element.url" class="yacht-img">
-                        <div class="overlay">
-                            <div class="text-center">
-                                <div v-html="element.icon" class=" icon-custom-primary-color"></div>
-                                <div class="hover-text fs-2 fw-bold">{{ element.name }}</div>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3 px-3 text-center" v-for="element in elements" :key="element.img">
+                    <router-link :to="`/appartamenti/${element.name}`" class="no-underline">
+                        <div class="img-content position-relative">
+                            <img :src="element.img" class="yacht-img mb-4">
+                            <p class="thin-font mb-4">{{ element.price }}</p>
+                            <h4 class="sub-title-s mb-4 text-capitalize">{{ element.name }}</h4>
                         </div>
-                    </div>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -51,6 +48,20 @@ export default {
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
+
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sub-title-s {
+    @include sub-title-s;
+}
+
+.thin-font {
+    font-size: 16px;
+    font-weight: 300;
+}
 
 .fade-in-element {
     opacity: 0;
@@ -74,7 +85,7 @@ h2 {
 
 .yacht-img {
     width: 100%;
-    height: 250px; /* Altezza ridotta */
+    height: 300px; /* Altezza ridotta */
     object-fit: cover; /* Mantiene proporzioni senza deformazioni */
     border-radius: 10px; /* Optional: angoli arrotondati */
 }
