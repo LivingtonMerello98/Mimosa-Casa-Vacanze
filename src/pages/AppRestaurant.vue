@@ -50,11 +50,11 @@ export default {
                 },
           ],
           backgroundImage:'/images/restaurant.png',
-          text:'Gusta piatti tradizionali preparati con ingredienti freschi e locali, in un ambiente accogliente.',
+          text:'Casale San Fedele, a pochi passi dalla nostra struttura, il ristorante offre piatti autentici preparati con ingredienti freschi e vini locali. Un’esperienza culinaria unica, tra sapori genuini e un’atmosfera accogliente.',
           description: {
-            "title": "Il gusto della Toscana nel nostro ristorante",
+            "title": "Il gusto dell’Umbria nel nostro ristorante",
             "subtitle": "Piatti tradizionali preparati con ingredienti freschi e locali",
-            "paragraph": "Il nostro ristorante è il cuore della tradizione toscana. Ogni piatto è preparato con ingredienti freschi e genuini, offrendo un'esperienza culinaria unica. Dalla pasta fatta in casa ai piatti a base di carne e pesce, ogni portata racconta la storia del nostro territorio. Un ambiente accogliente e familiare dove ogni pasto diventa un’occasione speciale per scoprire i sapori autentici della Toscana."
+            "paragraph": "Sebbene non faccia parte direttamente della nostra casa vacanze, il ristorante Casale San Fedele si trova a breve distanza ed è facilmente raggiungibile. Qui potrete gustare piatti preparati con ingredienti freschi e genuini, dalla pasta fatta in casa ai secondi di carne e pesce, accompagnati da dolci artigianali. La nostra selezione di vini DOC e IGT di Montefalco completa l’esperienza enogastronomica, con menu dedicati anche a vegetariani e celiaci"
           },
           carouselDescription: {
             "title": "Scopri il nostro ristorante",

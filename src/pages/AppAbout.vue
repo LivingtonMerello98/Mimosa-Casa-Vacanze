@@ -50,15 +50,15 @@ export default {
                 },
           ],
           backgroundImage:'/images/appartament.png',
-          text:'Scopri il comfort e la serenità dei nostri appartamenti, pensati per offrirti un soggiorno rilassante nel cuore della campagna toscana',
+          text:'Mimosa Casa Vacanze è pensato per offrirti un soggiorno rilassante nel cuore della campagna umbra, dove il comfort e la tranquillità si fondono perfettamente.',
           description: {
-            title: "I nostri appartamenti: il comfort della tua casa in Toscana",
-            subtitle:"Accoglienti, spaziosi e perfetti per ogni tipo di soggiorno",
-            paragraph: "Ogni appartamento di Mimosa Casa Vacanze è pensato per offrirti il massimo del comfort e della privacy. Arredati con cura, i nostri spazi sono dotati di tutti i servizi necessari per rendere il tuo soggiorno speciale: cucina attrezzata, Wi-Fi gratuito, camere eleganti e una vista mozzafiato sulla campagna toscana. Che tu stia cercando una fuga romantica o una vacanza in famiglia, troverai l’appartamento ideale per ogni esigenza."
+            title: "I nostri appartamenti, il comfort della tua casa in Umbria",
+            subtitle:"Mimosa Casa Vacanze offre ai suoi ospiti ben nove appartamenti deliziosi e romantici, perfetti per ogni esigenza.",
+            paragraph: "Che tu stia cercando una fuga romantica o una vacanza in famiglia, gli appartamenti di Mimosa Casa Vacanze offrono comfort e privacy immersi nel verde. Dotati di cucina attrezzata, Wi-Fi gratuito e riscaldamento, sono arredati con cura per garantirti un soggiorno rilassante. Scegli tra formula B&B, mezza pensione o pensione completa per vivere al meglio la nostra ospitalità."
           },
           carouselDescription: {
             title: "Esplora i nostri appartamenti",
-            paragraph: "Guarda da vicino i nostri spazi accoglienti, pensati per il massimo del comfort e della tranquillità."
+            paragraph: "Ogni appartamento è dotato di cucina completamente attrezzata, per offrire ai nostri ospiti la libertà di preparare i propri piatti preferiti, garantendo il massimo comfort, accanto alla possibilità di gustare i piatti del nostro ristorante.."
           },
         }
     }

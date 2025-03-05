@@ -26,15 +26,21 @@ export default {
                             <div class="col-2" style="height: 1px; background-color:#191B1C ;"></div>
                         </div>
                         <p class="paragraph-bold mb-5">
-                            Mimosa Casa Vacanze nasce dal sogno di creare un angolo di paradiso immerso nella splendida campagna toscana.
+                            Nel cuore verde dell'Italia, la nostra casa vacanze ti offre un'esperienza autentica, dove la bellezza
+                            della natura e la ricchezza delle tradizioni locali si fondono perfettamente.
                         </p>
                         <p class="paragraph-thin mb-5">
-                            La nostra passione per la natura, la tradizione e l’ospitalità ci ha spinto a trasformare un’antica casa di campagna in un accogliente rifugio dove ogni ospite può sentirsi come a casa.
+                            Situata a pochi minuti
+                            da <strong>Montefalco</strong>, uno dei gioielli dell'Umbria, la nostra struttura è il punto di partenza ideale per
+                            esplorare la regione, famosa per i suoi paesaggi mozzafiato e per la produzione del celebre
+                            <strong>Sagrantino di Montefalco</strong>.
                         </p>
                         <p class="paragraph-thin mb-5">
-                            Situato tra colline verdi, vigneti e oliveti, il nostro agriturismo è il luogo ideale per chi cerca una pausa dalla frenesia della vita quotidiana, senza rinunciare ai comfort moderni.
+                            Passeggia tra le vigne, visita le cantine e lasciati conquistare dai
+                            sapori e dai profumi che solo questa terra sa offrire. Ogni angolo della nostra casa ti farà sentire
+                            parte di una storia secolare, dove il relax e la cultura si incontrano in un mix perfetto.
                         </p>
-                        <button class="btn-secondary">Read more</button>
+                        <button class="btn-secondary">Attività</button>
                     </div>
                 </div>
             </div>

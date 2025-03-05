@@ -19,7 +19,7 @@ export default{
                     url: '/attivita'
                 },
                 {
-                    navItem: 'contacts',
+                    navItem: 'contatti',
                     url: '/contacts'
                 }
             ]

@@ -13,13 +13,13 @@ export default {
             <span>
               <font-awesome-icon :icon="['fas', 'location-dot']" class="map-location-icon" />
             </span>
-            <span class="mx-3 custom-font-size">7087 Placeholder, Alexandria, VA</span>
+            <span class="mx-3 custom-font-size">Via degli Olivi 06034 Mercatello PG</span>
           </div>
           <div class="telephone-contact mx-0 mx-md-5">
             <span>
               <font-awesome-icon :icon="['fas', 'phone']" class="phone-icon" />
             </span>
-            <span class="mx-3 custom-font-size">800-2345-6789</span>
+            <span class="mx-3 custom-font-size">+39 329 7368840 | +39 329 209 0010</span>
           </div>
         </div>
         <div class="col-md-4 col-12 d-flex align-items-center justify-content-center justify-content-md-end">

@@ -17,7 +17,7 @@ export default {
                     <div class="content mb-5">
                         <div class="text text-center py-5">
                             <h2 class="title-m mb-5">Camere accoglienti per <br>un soggiorno indimenticabile</h2>
-                            <button class="btn-primary-to-white mb-5">More Details</button>
+                            <button class="btn-primary-to-white mb-5">Esplora le camere</button>
                         </div>
                     </div>
                 </div>

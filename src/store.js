@@ -12,7 +12,7 @@ export const store = reactive({
         this.showMenu = !this.showMenu;
     },
 
-    showComponentWithDelay(componentName, delay = 2100) {
+    showComponentWithDelay(componentName, delay = 200) {
         setTimeout(() => {
             this.visibleComponents[componentName] = true;
         }, delay);

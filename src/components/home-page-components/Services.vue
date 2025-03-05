@@ -8,17 +8,17 @@ export default {
         return {
             services: [
                 { icon: faAnchor, 
-                   title: 'Maneggio', 
-                   text: 'Respira l’aria fresca della campagna e lasciati guidare in un’esperienza a cavallo tra sentieri panoramici e colline toscane. Che tu sia principiante o esperto, il nostro maneggio offre passeggiate adatte a tutti, per un contatto autentico con la natura.' },
+                   title: 'Maneggio e Passeggiate a Cavallo', 
+                   text: 'Esplora la natura incontaminata dell’Umbria con passeggiate a cavallo. Che tu sia un principiante o un esperto, il nostro maneggio è il luogo ideale per vivere l’emozione di una cavalcata tra le colline umbre.' },
                 { icon: faUser, 
-                   title: 'Cantine di Montefalco', 
-                   text: 'Scopri il cuore enologico dell’Umbria con una visita alle prestigiose cantine di Montefalco. Degustazioni guidate, vigneti secolari e il pregiato Sagrantino ti aspettano per un’esperienza sensoriale indimenticabile.' },
+                   title: 'Escursione in fattoria', 
+                   text: 'Una visita guidata in una fattoria vicina ti permetterà di scoprire la *flora locale* e di ammirare i paesaggi mozzafiato tipici dell’Umbria. Un’esperienza unica per entrare in contatto con la natura e conoscere da vicino le tradizioni agricole della regione.' },
                 { icon: faCar, 
                    title: 'Tour in Elicottero', 
-                   text: 'Vivi un’avventura straordinaria con un volo in elicottero sopra le meravigliose colline toscane. Ammira borghi medievali, vigneti e paesaggi mozzafiato da una prospettiva unica ed esclusiva.' },
+                   text: 'Per un’esperienza davvero unica, vivi un’emozione senza pari sorvolando le colline umbre con un volo in elicottero privato. Un’opportunità esclusiva per vedere la bellezza del paesaggio da un punto di vista privilegiato.' },
                 { icon: faStar, 
-                   title: 'Escursione in Fattoria', 
-                   text: 'Immergiti nella vita di campagna con una giornata in fattoria. Partecipa alla cura degli animali, scopri i segreti della produzione locale e gusta prodotti genuini a km 0. Perfetto per famiglie e per chi ama la natura.' },
+                   title: 'Visita e Degustazione a Montefalco', 
+                   text: 'Partecipa a una visita guidata nelle cantine di Montefalco, il cuore del Sagrantino, dove potrai degustare alcuni dei migliori vini locali accompagnati da prelibatezze tipiche della regione' },
             ]
         }
     },
@@ -36,7 +36,12 @@ export default {
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-12 col-md-6 col-sm-12 text-center fade-in-element">
-                    <h2 class="title-section py-3">Esperienze Uniche</h2>
+                    <h2 class="title-section py-3">Attività uniche</h2>
+                        <p class="paragraph-thin py-2 mx-3 py-2"><strong>Mimosa Casa Appartamenti propone ai suoi ospiti</strong> una selezione di attività per un soggiorno
+                        indimenticabile. Potrai rilassarti nella nostra *piscina panoramica*, goderti una passeggiata a
+                        cavallo grazie ai maneggi nelle vicinanze e vivere momenti di tranquillità circondato dalla bellezza
+                        dell’Umbria. Avvolta da ampi spazi verdi, la nostra struttura è il luogo perfetto dove trovare la tua
+                        oasi di pace, relax e serenità.</p>
                 </div>
                 <div class="col-12 my-5" style="background-color: #ffff;">
                     <div class="col-1" style="height: 1px; background-color:#191B1C; margin: 0 auto;"></div>

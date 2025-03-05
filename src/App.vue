@@ -3,6 +3,7 @@ import { store } from './store';
 import AppFooterShare from './components/AppFooterShare.vue';
 import AppSplashPage from './pages/AppSplashPage.vue';
 import AppSidebar from './components/AppSidebar.vue';
+import { mapState } from 'vuex';
 
 export default {
   components: {
@@ -12,8 +13,7 @@ export default {
   },
   data() {
     return {
-      //riattivare alla fine
-      flag: true,
+      flag: true,  // Indica se la splash page deve essere visibile
       footerLinks: [
         { label: 'APPARTAMENTI', url: '#' },
         { label: 'RISTORANTI', url: '#' },
@@ -24,26 +24,27 @@ export default {
   },
   computed: {
     showMenu() {
-      // Accedi alla proprietà `showMenu` dal tuo store
       return store.showMenu;
     }
   },
   watch: {
     showMenu(newValue) {
       if (newValue) {
-        // Blocca lo scroll verticale
         document.body.style.overflow = 'hidden';
       } else {
-        // Ripristina lo scroll
         document.body.style.overflow = '';
       }
     }
   },
-
-  mounted(){
-    setTimeout(()=>{
-      this.flag = false;
-    },2000) //2 secondo
+  mounted() {
+    this.$router.beforeEach((to, from, next) => {
+      // Mostra la splash page quando la navigazione cambia
+      this.flag = true;
+      setTimeout(() => {
+        this.flag = false;  // Nasconde la splash page dopo 2 secondi
+        next();  // Procede con la navigazione
+      }, 2000); // Mostra la splash page per 2 secondi
+    });
   }
 }
 </script>
@@ -60,16 +61,18 @@ export default {
     <div v-if="flag" class="overflowHidden">
         <AppSplashPage/>
     </div>
+    
     <div v-if="showMenu"> 
         <AppSidebar/> 
     </div>
+    
     <router-view></router-view>
+    
     <AppFooterShare :links="footerLinks" />
   </div>
 </template>
 
-
-<style lang="scss"scoped>
+<style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
 

@@ -28,12 +28,11 @@ export default {
                 <div class="col-12">
                     <div class="card-content py-5">
                         <div class="text-content" :class="animationClass">
-                            <h2 class="title-l"> Soggiorni rilassanti <br>in campagna</h2>
+                            <h2 class="title-l">Scopri il tuo angolo di paradiso<br>nel cuore dell'Italia</h2>
                             <p class="font-custom mb-5">
-                                Soggiorna in un'oasi di tranquillità circondata dalla natura,
-                                <br>con piscina e servizi esclusivi.
+                                Benvenuto nella nostra casa vacanze nel cuore dell'Umbria, tra colline verdi e borghi medievali.<br>Un rifugio perfetto per rilassarti, rigenerarti e vivere un'esperienza unica. <br> La tua vacanza ideale ti aspetta!
                             </p>
-                            <button class="btn-border-to-white">Esplora le nostre offerte</button>
+                            <button class="btn-border-to-white">Esplora appartamenti</button>
                         </div>
                     </div>
                 </div>

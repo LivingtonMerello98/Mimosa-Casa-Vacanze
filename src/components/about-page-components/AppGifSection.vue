@@ -42,7 +42,7 @@ export default {
                             <p class="mb-5">
                                 {{ text }}
                             </p>
-                            <button class="btn-primary-to-white mb-5">Learn More</button>
+                            <button class="btn-primary-to-white mb-5">Scopri di più</button>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export default {
         }
 
         .btn-primary-to-white {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -115,7 +115,7 @@ export default {
         padding-top: 50px;
 
         .btn-primary-to-white {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 }
