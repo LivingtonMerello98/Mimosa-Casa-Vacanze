@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
 .element-img {
     width: 100%;
-    height: auto;
+    height: 300px;
     max-width: 500px;
     max-height: 500px;
     object-fit: cover;

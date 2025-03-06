@@ -21,19 +21,15 @@ export default {
                         <div class="col-2" style="height: 1px; background-color:#F1E2C5 ;"></div>
                     </div>
                     <p class="paragraph-bold mb-5">
-                        Nel cuore verde dell'Italia, la nostra casa vacanze ti offre un'esperienza autentica, dove la bellezza
-                        della natura e la ricchezza delle tradizioni locali si fondono perfettamente.
+                        Vivi l'emozione di un'escursione a cavallo immerso nella natura incontaminata, tra sentieri panoramici e paesaggi suggestivi.
                     </p>
                     <p class="paragraph-thin mb-5">
-                        Situata a pochi minuti
-                        da <strong>Montefalco</strong>, uno dei gioielli dell'Umbria, la nostra struttura è il punto di partenza ideale per
-                        esplorare la regione, famosa per i suoi paesaggi mozzafiato e per la produzione del celebre
-                        <strong>Sagrantino di Montefalco</strong>.
+                        A pochi minuti da <strong>Montefalco</strong>, potrai esplorare il territorio in sella, attraversando vigneti, boschi e colline, vivendo un’esperienza unica nel cuore dell'Umbria. Un’occasione perfetta per connettersi con la natura e scoprire la bellezza autentica del luogo, magari brindando con un calice di <strong>Sagrantino di Montefalco</strong> dopo la tua avventura.
                     </p>
                 </div>
             </div>
             <div class="col-md-6 col-12 img-container fade-in-element d-flex justify-content-center align-items-center">
-                <img src="https://incrociata.it/wp-content/uploads/2019/10/incrociata-840x560.jpg" class="img-fluid img-attivita" alt="Agriturismo">
+                <img src="/images/gita-a-cavallo.png" class="img-fluid img-attivita" alt="Agriturismo">
             </div>
         </div>
     </div>
@@ -43,7 +39,7 @@ export default {
     <div class="container py-5 fade-in-element">
         <div class="row justify-content-center">
             <div class="col-md-6 col-12 img-container fade-in-element d-flex justify-content-center align-items-center">
-                <img src="https://incrociata.it/wp-content/uploads/2019/10/incrociata-840x560.jpg" class="img-fluid img-attivita" alt="Agriturismo">
+                <img src="/images/gita-in-fattoria.png" class="img-fluid img-attivita" alt="Agriturismo">
             </div>
             <div class="col-md-6 py-5">
                 <div>
@@ -52,14 +48,10 @@ export default {
                         <div class="col-2" style="height: 1px; background-color:#191B1C ;"></div>
                     </div>
                     <p class="paragraph-bold mb-5">
-                        Nel cuore verde dell'Italia, la nostra casa vacanze ti offre un'esperienza autentica, dove la bellezza
-                        della natura e la ricchezza delle tradizioni locali si fondono perfettamente.
+                        Un’esperienza immersiva per scoprire la vita in fattoria, tra animali, natura e antiche tradizioni contadine.
                     </p>
                     <p class="paragraph-thin mb-5">
-                        Situata a pochi minuti
-                        da <strong>Montefalco</strong>, uno dei gioielli dell'Umbria, la nostra struttura è il punto di partenza ideale per
-                        esplorare la regione, famosa per i suoi paesaggi mozzafiato e per la produzione del celebre
-                        <strong>Sagrantino di Montefalco</strong>.
+                        A pochi minuti da <strong>Montefalco</strong>, potrai avvicinarti alla cultura rurale umbra, partecipando ad attività autentiche come la mungitura, la raccolta dei prodotti della terra e la degustazione di formaggi e olio extravergine. Un’occasione unica per vivere la campagna e assaporare il meglio della tradizione locale, accompagnata da un calice di <strong>Sagrantino di Montefalco</strong>.
                     </p>
                 </div>
             </div>
@@ -77,19 +69,15 @@ export default {
                         <div class="col-2" style="height: 1px; background-color:#F1E2C5 ;"></div>
                     </div>
                     <p class="paragraph-bold mb-5">
-                        Nel cuore verde dell'Italia, la nostra casa vacanze ti offre un'esperienza autentica, dove la bellezza
-                        della natura e la ricchezza delle tradizioni locali si fondono perfettamente.
+                        Ammira l'Umbria da una prospettiva unica con un esclusivo tour in elicottero sopra colline, vigneti e borghi medievali.
                     </p>
                     <p class="paragraph-thin mb-5">
-                        Situata a pochi minuti
-                        da <strong>Montefalco</strong>, uno dei gioielli dell'Umbria, la nostra struttura è il punto di partenza ideale per
-                        esplorare la regione, famosa per i suoi paesaggi mozzafiato e per la produzione del celebre
-                        <strong>Sagrantino di Montefalco</strong>.
+                        Decolla a pochi minuti da <strong>Montefalco</strong> e lasciati affascinare dai panorami mozzafiato della regione. Sorvola le distese di vigneti del <strong>Sagrantino di Montefalco</strong>, le antiche città storiche e le meraviglie naturali dell’Umbria, vivendo un'esperienza indimenticabile all’insegna del lusso e dell’avventura.
                     </p>
                 </div>
             </div>
             <div class="col-md-6 col-12 img-container fade-in-element d-flex justify-content-center align-items-center">
-                <img src="https://incrociata.it/wp-content/uploads/2019/10/incrociata-840x560.jpg" class="img-fluid img-attivita" alt="Agriturismo">
+                <img src="/images/gita-elicottero.png" class="img-fluid img-attivita" alt="Agriturismo">
             </div>
         </div>
     </div>
@@ -99,7 +87,7 @@ export default {
     <div class="container py-5 fade-in-element">
         <div class="row justify-content-center">
             <div class="col-md-6 col-12 img-container fade-in-element d-flex justify-content-center align-items-center">
-                <img src="https://incrociata.it/wp-content/uploads/2019/10/incrociata-840x560.jpg" class="img-fluid img-attivita" alt="Agriturismo">
+                <img src="/images/degustazione.png" class="img-fluid img-attivita" alt="Agriturismo">
             </div>
             <div class="col-md-6 py-5">
                 <div>
@@ -108,14 +96,10 @@ export default {
                         <div class="col-2" style="height: 1px; background-color:#191B1C ;"></div>
                     </div>
                     <p class="paragraph-bold mb-5">
-                        Nel cuore verde dell'Italia, la nostra casa vacanze ti offre un'esperienza autentica, dove la bellezza
-                        della natura e la ricchezza delle tradizioni locali si fondono perfettamente.
+                        Scopri Montefalco attraverso un viaggio tra le sue cantine, degustando vini pregiati e prodotti tipici della tradizione umbra.
                     </p>
                     <p class="paragraph-thin mb-5">
-                        Situata a pochi minuti
-                        da <strong>Montefalco</strong>, uno dei gioielli dell'Umbria, la nostra struttura è il punto di partenza ideale per
-                        esplorare la regione, famosa per i suoi paesaggi mozzafiato e per la produzione del celebre
-                        <strong>Sagrantino di Montefalco</strong>.
+                        A pochi minuti da <strong>Montefalco</strong>, potrai esplorare le rinomate cantine della zona, immergendoti nei sapori autentici del <strong>Sagrantino di Montefalco</strong>. Un'esperienza unica tra vigneti e degustazioni guidate, perfetta per gli amanti del buon vino e della cultura enogastronomica locale.
                     </p>
                 </div>
             </div>

@@ -12,6 +12,7 @@ import AppWhyChooseUs from "../components/about-page-components/AppWhyChooseUs.v
 import AppOurTeam from "../components/about-page-components/AppOurTeam.vue"
 import AppTestimonials from "../components/about-page-components/AppTestimonials.vue"
 import AppFeaturedProjects from "../components/about-page-components/AppFeaturedProjects.vue"
+import AppCarousel from '../components/AppCarousel.vue';
 
 
 
@@ -26,6 +27,7 @@ export default {
     AppOurTeam,
     AppTestimonials,
     AppFeaturedProjects,
+    AppCarousel
   },
   data() {
         return {
@@ -71,7 +73,13 @@ export default {
   <main>
     <AppGifSection :backgroundImage="backgroundImage" :text="text" />
     <AppAboutUs :description="description" />
-    <AppFeaturedProjects :carouselDescription="carouselDescription" :paragraph="paragraph" :elements="elements" />
+    <section class="container py-5 ">
+
+      <div class="container py-5 ">
+        <AppCarousel :elements="elements" />
+      </div>
+    </section>
+    <!-- <AppFeaturedProjects :carouselDescription="carouselDescription" :paragraph="paragraph" :elements="elements" /> -->
     <!-- <AppWhyChooseUs /> -->
   </main>
 </template>
