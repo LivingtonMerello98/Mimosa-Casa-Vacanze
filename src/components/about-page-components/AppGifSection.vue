@@ -28,6 +28,15 @@ export default {
     },
     mounted() {
         store.showComponentWithDelay('appgifsection'); 
+    },
+    methods: {
+        // Funzione che fa scorrere la pagina verso il basso
+        scrollDown() {
+            window.scrollBy({
+                top: window.innerHeight,  // Spostamento verso il basso di una finestra
+                behavior: 'smooth'  // Scroll fluido
+            });
+        }
     }
 };
 </script>
@@ -42,7 +51,8 @@ export default {
                             <p class="mb-5">
                                 {{ text }}
                             </p>
-                            <button class="btn-primary-to-white mb-5">Scopri di più</button>
+                            <!-- Aggiungi il click handler al pulsante -->
+                            <button class="btn-primary-to-white mb-5" @click="scrollDown">Scopri di più</button>
                         </div>
                     </div>
                 </div>
@@ -50,6 +60,7 @@ export default {
         </div>
     </section>
 </template>
+
 
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;

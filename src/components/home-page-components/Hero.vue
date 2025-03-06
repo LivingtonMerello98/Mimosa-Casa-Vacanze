@@ -32,7 +32,9 @@ export default {
                             <p class="font-custom mb-5">
                                 Benvenuto nella nostra casa vacanze nel cuore dell'Umbria, tra colline verdi e borghi medievali.<br>Un rifugio perfetto per rilassarti, rigenerarti e vivere un'esperienza unica. <br> La tua vacanza ideale ti aspetta!
                             </p>
-                            <button class="btn-border-to-white">Esplora appartamenti</button>
+                            <router-link to="/appartamenti">
+                                <button class="btn-border-to-white">Esplora appartamenti</button>
+                            </router-link>
                         </div>
                     </div>
                 </div>

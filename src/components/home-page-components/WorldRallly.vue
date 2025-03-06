@@ -18,7 +18,11 @@ export default {
                         <h3 class="title-thin-m mb-3">Immerso nella serenità delle colline umbre.</h3> 
                         <p class="paragraph-white mb-5">la nostra oasi di tranquillità è il luogo perfetto per
                             rilassarti, riscoprire il contatto con la natura e goderti la pace che solo l’Umbria sa offrire.</p>
-                        <button class="btn-primary-to-secondary">Scopri dove ci troviamo</button>
+                            <router-link to="/contatti">
+                                <div class="col-12 py-5">
+                                    <button class="btn-primary-to-secondary">Vieni a trovarci</button>
+                                </div>
+                            </router-link>
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-none"></div>

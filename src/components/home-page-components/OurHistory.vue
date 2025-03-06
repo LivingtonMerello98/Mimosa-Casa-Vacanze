@@ -40,7 +40,9 @@ export default {
                             sapori e dai profumi che solo questa terra sa offrire. Ogni angolo della nostra casa ti farà sentire
                             parte di una storia secolare, dove il relax e la cultura si incontrano in un mix perfetto.
                         </p>
-                        <button class="btn-secondary">Attività</button>
+                        <router-link to="/attivita">
+                            <button class="btn-secondary">Attività</button>
+                        </router-link>
                     </div>
                 </div>
             </div>

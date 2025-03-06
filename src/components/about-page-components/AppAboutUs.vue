@@ -71,6 +71,10 @@ span {
   line-height: 1.25em;
   font-size: $custom-title-section-size;
   color:white;
+
+  @media only screen and (max-width: 500px) {
+    font-size:1.8rem;
+  }
 }
 
 .custom-circle {

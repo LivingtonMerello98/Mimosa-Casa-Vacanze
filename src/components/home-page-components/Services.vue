@@ -1,33 +1,30 @@
 <script>
-import { faAnchor, faCar, faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { faUser, faStar, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
+import { faWheatAwn, faHatCowboy, faHelicopter, faWineGlass } from '@fortawesome/free-solid-svg-icons';
 import { store } from '../../store'; 
+
 export default {
     name: 'Services',
     data() {
         return {
             services: [
-                { icon: faAnchor, 
+                { icon: faHatCowboy, 
                    title: 'Maneggio e Passeggiate a Cavallo', 
                    text: 'Esplora la natura incontaminata dell’Umbria con passeggiate a cavallo. Che tu sia un principiante o un esperto, il nostro maneggio è il luogo ideale per vivere l’emozione di una cavalcata tra le colline umbre.' },
-                { icon: faUser, 
+                { icon: faWheatAwn, 
                    title: 'Escursione in fattoria', 
-                   text: 'Una visita guidata in una fattoria vicina ti permetterà di scoprire la *flora locale* e di ammirare i paesaggi mozzafiato tipici dell’Umbria. Un’esperienza unica per entrare in contatto con la natura e conoscere da vicino le tradizioni agricole della regione.' },
-                { icon: faCar, 
+                   text: 'Una visita guidata in una fattoria vicina ti permetterà di scoprire la flora locale e di ammirare i paesaggi mozzafiato tipici dell’Umbria. Un’esperienza unica per entrare in contatto con la natura e conoscere da vicino le tradizioni agricole della regione.' },
+                { icon: faHelicopter, 
                    title: 'Tour in Elicottero', 
                    text: 'Per un’esperienza davvero unica, vivi un’emozione senza pari sorvolando le colline umbre con un volo in elicottero privato. Un’opportunità esclusiva per vedere la bellezza del paesaggio da un punto di vista privilegiato.' },
-                { icon: faStar, 
+                { icon: faWineGlass, 
                    title: 'Visita e Degustazione a Montefalco', 
                    text: 'Partecipa a una visita guidata nelle cantine di Montefalco, il cuore del Sagrantino, dove potrai degustare alcuni dei migliori vini locali accompagnati da prelibatezze tipiche della regione' },
             ]
         }
     },
     mounted() {
-        store.observeElementsWithFadeIn();
-        //  window.addEventListener('scroll', this.parallaxEffect);
+        store.observeElementsWithFadeIn(); 
     },
-    methods: {
-    }
 }
 </script>
 
@@ -37,11 +34,10 @@ export default {
             <div class="row">
                 <div class="col-lg-12 col-md-6 col-sm-12 text-center fade-in-element">
                     <h2 class="title-section py-3">Attività uniche</h2>
-                        <p class="paragraph-thin py-2 mx-3 py-2"><strong>Mimosa Casa Appartamenti propone ai suoi ospiti</strong> una selezione di attività per un soggiorno
+                    <p class="paragraph-thin py-2 mx-3 py-2"><strong>Mimosa Casa Appartamenti propone ai suoi ospiti</strong> una selezione di attività per un soggiorno
                         indimenticabile. Potrai rilassarti nella nostra *piscina panoramica*, goderti una passeggiata a
                         cavallo grazie ai maneggi nelle vicinanze e vivere momenti di tranquillità circondato dalla bellezza
-                        dell’Umbria. Avvolta da ampi spazi verdi, la nostra struttura è il luogo perfetto dove trovare la tua
-                        oasi di pace, relax e serenità.</p>
+                        dell’Umbria.</p>
                 </div>
                 <div class="col-12 my-5" style="background-color: #ffff;">
                     <div class="col-1" style="height: 1px; background-color:#191B1C; margin: 0 auto;"></div>
@@ -52,8 +48,8 @@ export default {
                 <div class="col-lg-6 col-md-12" v-for="(service, index) in services" :key="index">
                     <div class="service-item mb-5 py-3">
                         <div class="title mb-3 d-flex">
-                            <div>
-                                <font-awesome-icon :icon="service.icon" class="custom-primary-color fa-lg" />
+                            <div class="mx-1">
+                                <font-awesome-icon :icon="service.icon" class="custom-primary-color fa-sm " />
                             </div>
                             <div>
                                 <span class="sub-title-l mx-3 py-2" style="color: #222627;">{{ service.title }}</span>
@@ -68,6 +64,7 @@ export default {
         </div>
     </section>
 </template>
+
 
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
@@ -88,10 +85,15 @@ export default {
 .custom-primary-color {
     background-color: $custom-primary-color;
     color: white;
-    border-radius: 100%;
-    padding: 1rem;
-    font-size: 1.5rem;
+    width: 3rem; /* Imposta una larghezza fissa */
+    height: 3rem; /* Imposta un'altezza fissa uguale alla larghezza */
+    border-radius: 50%; /* Rende il div perfettamente circolare */
+    display: flex; /* Centra il contenuto */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    padding: 0.8rem;
 }
+
 
 .title-section {
     @include title-section;

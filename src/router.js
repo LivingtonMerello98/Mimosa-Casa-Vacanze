@@ -33,18 +33,13 @@ const router = createRouter({
         },
         {
             name: 'contacts',
-            path: '/contacts',
+            path: '/contatti',
             component: AppContacts
         },
         {
             name: 'attività',
             path: '/attivita',
             component: AppService
-        },
-        {
-            name: 'test',
-            path: '/test',
-            component: test
         }
     ],
 });

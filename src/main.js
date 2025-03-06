@@ -6,11 +6,33 @@ import App from './App.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-import { faAnchor, faCar, faBriefcase, faLocationDot, faPhone, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
-import { faUser, faStar, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
+import {
+    faWheatAwn,
+    faHatCowboy,
+    faHelicopter,
+    faWineGlass,
+    faLocationDot,
+    faPhone,
+    faBars,
+    faClose
+} from '@fortawesome/free-solid-svg-icons';
+
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faUser, faAnchor, faCar, faBriefcase, faStar, faThumbsUp, faLocationDot, faPhone, faFacebook, faTwitter, faInstagram, faBars, faClose);
+library.add(
+    faWheatAwn,
+    faHatCowboy,
+    faHelicopter,
+    faWineGlass,
+    faLocationDot,
+    faPhone,
+    faFacebook,
+    faTwitter,
+    faInstagram,
+    faBars,
+    faClose
+);
+
 
 import "@fontsource/archivo"; // Default weight (400)
 import "@fontsource/archivo/100.css"; // Weight 100

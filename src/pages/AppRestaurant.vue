@@ -33,22 +33,19 @@ export default {
         return {
           elements: [
                 {
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
+                    url: '/images/food-1.png'
                 },
                 {
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
+                    url: '/images/food-2.png'
                 },
                 {
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
+                    url: '/images/food-4.png'
                 },
                 {
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
+                    url: '/images/food-5.png'
                 },
                 {
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
-                },
-                {
-                    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwubbtBEfaS2Uz7XsmtyGcrKyKU5aBA0L5A&s'
+                    url: '/images/food-4.png'
                 },
           ],
           backgroundImage:'/images/restaurant.png',

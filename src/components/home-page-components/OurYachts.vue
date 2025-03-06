@@ -57,13 +57,8 @@ export default {
                         </div>
                     </div>
                 </div>
-                
                 <!-- Usando il componente figlio "AppCarousel" e passando i dati -->
-                <AppCarousel :elements="elements" />
-
-                <div class="col-12 text-center py-5">
-                    <button class="btn-border-to-white">View All</button>
-                </div>
+                <AppCarousel :elements="elements" class="mb-5" />
             </div>
         </div>
     </section>

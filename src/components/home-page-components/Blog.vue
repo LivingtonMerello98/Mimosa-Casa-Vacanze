@@ -43,9 +43,11 @@ export default {
                 <p class="thin-font mb-4">{{ post.data }}</p>
                 <h4 class="sub-title-s mb-4">{{ post.title }}</h4>
             </div>
-            <div class="col-12 mb-5 text-center">
-                <button class="btn-primary-to-secondary">View all Blog Posts</button>
-            </div>
+            <router-link to="/appartamenti">
+                <div class="col-12 mb-5 text-center">
+                    <button class="btn-primary-to-secondary">Vedi tutti gli appartamenti</button>
+                </div>
+            </router-link>
         </div>
     </div>
 </template>

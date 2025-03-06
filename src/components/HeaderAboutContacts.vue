@@ -20,7 +20,7 @@ export default {
                 },
                 {
                     navItem: 'contatti',
-                    url: '/contacts'
+                    url: '/contatti'
                 }
             ]
         }
