@@ -16,9 +16,9 @@ export default {
                         </div>
                         <div class="mt-3">
                             <p><strong>Indirizzo:</strong> Via degli Olivi 06034 Mercatello PG</p>
-                            <p><strong>Phone:</strong> <a href="tel:+39 329 7368840"
+                            <p><strong>telefono:</strong> <a href="tel:+39 329 7368840"
                                     class="info fw-bold">+39 329 7368840</a></p>
-                            <p><strong>Phone:</strong> <a href="tel:+39 329 209 0010"
+                            <p><strong>telefono 2:</strong> <a href="tel:+39 329 209 0010"
                                     class="info fw-bold">+39 329 209 0010</a></p>
                             <p><strong>E-mail:</strong> <a href="mailto:info@mimosacasevacanze.it"
                                     class="info fw-bold">info@mimosacasevacanze.it</a></p>

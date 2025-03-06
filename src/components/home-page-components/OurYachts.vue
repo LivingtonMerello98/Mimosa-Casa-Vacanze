@@ -16,44 +16,22 @@ export default {
         return {
             elements: [
                 {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'express',
-                    url: '/images/house.png'
+                    url: '/images/umbria-1.png'
                 },
                 {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'cruiser',
-                    url: '/images/house.png'
+                    url: '/images/umbria-2.png'
                 },
                 {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'cruiser',
-                    url: '/images/house.png'
+                    url: '/images/umbria-3.png'
                 },
                 {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'flybridges',
-                     url: '/images/house.png'
+                     url: '/images/umbria-4.png'
                 },
                 {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'sedan bridges',
-                     url: '/images/house.png'
+                     url: '/images/umbria-5.png'
                 },
                 {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'tri-deck',
-                     url: '/images/house.png'
-                },
-                {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'megayacths',
-                     url: '/images/house.png'
-                },
-                {
-                    icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'convertibles',
-                     url: '/images/house.png'
+                     url: '/images/umbria-6.png'
                 }
             ]
         }

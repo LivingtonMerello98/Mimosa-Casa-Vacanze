@@ -17,7 +17,7 @@ export default {
   },
   data() {
         return {
-          backgroundImage:'/images/appartament.png',
+          backgroundImage:'/images/nature.png',
           text:'Vieni a carcarci, e passa un piacevole weekend immerso nella natura.',
         }
     }

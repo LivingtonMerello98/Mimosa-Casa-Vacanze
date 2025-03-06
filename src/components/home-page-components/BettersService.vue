@@ -44,7 +44,7 @@ export default {
 }
 
 .bg-image {
-    background-image: url('https://pensarecasa.it/wp-content/uploads/2023/02/Camere-da-letto-camera-da-letto-40-enni-.jpg');
+    background-image: url('/images/better-service.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;

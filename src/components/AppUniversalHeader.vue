@@ -25,10 +25,7 @@ export default {
         <div class="col-md-4 col-12 d-flex align-items-center justify-content-center justify-content-md-end">
           <div class="social-icon-circle">
             <a href="">
-              <font-awesome-icon :icon="['fab', 'facebook']" />
-            </a>
-            <a href="">
-              <font-awesome-icon :icon="['fab', 'twitter']" class="mx-4" />
+              <font-awesome-icon :icon="['fab', 'facebook']"  class="mx-4" />
             </a>
             <a href="">
               <font-awesome-icon :icon="['fab', 'instagram']" />

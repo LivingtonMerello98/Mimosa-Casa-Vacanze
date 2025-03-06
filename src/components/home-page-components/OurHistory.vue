@@ -15,7 +15,7 @@ export default {
             <div class="row">
 
                 <div class="col-md-6 col-12 img-container fade-in-element">
-                    <img src="https://incrociata.it/wp-content/uploads/2019/10/incrociata-840x560.jpg" class="img-fluid img-agriturismo" alt="Agriturismo">
+                    <img src="/images/ourHistory.png" class="img-fluid img-agriturismo" alt="Agriturismo">
                 </div>
 
                 <div class="col-md-12 col-sm-12 col-lg-6 py-5">

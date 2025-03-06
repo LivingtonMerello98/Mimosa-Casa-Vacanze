@@ -62,10 +62,7 @@ export default {
                 <div class="col-md-4 col-12 mb-md-0">
                     <div class="social-icon-circle d-flex justify-content-center align-items-center">
                         <a href="https://www.facebook.com" target="_blank">
-                            <font-awesome-icon :icon="['fab', 'facebook']" class="icon"/>
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank">
-                            <font-awesome-icon :icon="['fab', 'twitter']" class="mx-4 icon" />
+                            <font-awesome-icon :icon="['fab', 'facebook']" class="icon mx-4"/>
                         </a>
                         <a href="https://www.instagram.com" target="_blank">
                             <font-awesome-icon :icon="['fab', 'instagram']" class="icon"/>
